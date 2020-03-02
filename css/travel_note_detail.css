@@ -1,0 +1,304 @@
+body {
+	font-size: 16px;
+	background: rgba(188, 210, 238, 0.4);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/*返回顶部*/
+
+.top {
+	position: fixed;
+	top: 80%;
+	right: 20px;
+}
+
+#top-btn {
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+
+#top-btn:hover {
+	background: rgba(238, 169, 184, .5);
+}
+
+
+/*路径导航*/
+
+.note-detail .breadcrumb {
+	margin-top: 20px;
+	background: transparent;
+}
+
+
+/*游记正文*/
+
+.note-detail .note-left {
+	padding: 10px 30px;
+}
+
+
+/*头部*/
+
+
+/*头部的左边*/
+
+.note-left .note-header>div {
+	display: inline-block;
+}
+
+.note-header .writer-info>a {
+	display: block;
+}
+
+.note-header .writer-info .writer-img {
+	width: 100px;
+	height: 100px;
+}
+
+.note-header .writer-info .writer-name {
+	margin-top: 7px;
+	color: #8B7B8B;
+	font-weight: 550;
+}
+
+.note-header .writer-info .writer-name:hover {
+	text-decoration: underline;
+}
+
+
+/*头部的右边*/
+
+.note-header .info-right {
+	vertical-align: top;
+}
+
+.note-header .note-info,
+.note-header .note-time,
+.note-header .other-info {
+	padding: 10px;
+}
+
+.note-header .note-info i {
+	font-size: 16px;
+}
+
+.note-header .other-info i {
+	font-size: 20px;
+}
+
+.note-header .note-info>div {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.note-header .note-info .note-like,
+.note-header .note-info .note-collect,
+.note-header .note-info .note-comment {
+	cursor: pointer;
+}
+
+.note-header .note-info .note-like:hover i,
+.note-header .note-info .note-like.like i {
+	color: #EE5C42;
+}
+
+.note-header .note-info .note-collect:hover i,
+.note-header .note-info .note-collect.collect i {
+	color: #ffa800;
+}
+
+.note-header .other-info .site {
+	font-size: 18px;
+}
+
+.note-header .other-info .tags {
+	margin-top: 10px;
+}
+
+
+/*标题*/
+
+.note-left .note-title h2 {
+	font-weight: 600;
+	line-height: 1.5em;
+}
+
+
+/*内容*/
+
+.note-left .note-content {
+	font-size: 18px;
+	line-height: 1.7em;
+	padding: 5px 10px;
+}
+
+.note-left .note-content img {
+	width: 100%;
+}
+
+
+/*分割线*/
+
+hr {
+	border-top: 1px solid #363636;
+}
+
+
+/*评论*/
+
+.note-left .comment-show .current-user {
+	position: relative;
+}
+
+.note-left .comment-show .current-user .current-img {
+	width: 50px;
+	height: 50px;
+}
+
+.note-left .comment-show .current-user #comment-area {
+	outline: none;
+	border-radius: 10px;
+}
+
+.note-left .comment-show .current-user #publish-btn {
+	padding: 10px;
+	outline: none;
+	border: transparent;
+	background: #EEB4B4;
+}
+
+.note-left .comment-show .comment-nav,
+.note-left .comment-show .comment-nav-null{
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px 0;
+}
+
+.note-left .comment-show .comment-list .comment {
+	background: #C1CDCD;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.comment-list .comment img {
+	width: 25px;
+	height: 25px;
+}
+
+.comment-list .comment a {
+	color: #8B6969;
+	font-size: 15px;
+}
+
+.comment-list .comment a:hover {
+	text-decoration: underline;
+}
+
+.comment-list .comment .comment-header a,
+.comment-list .comment .comment-header span {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.comment-list .comment .comment-header a:nth-child(1),
+.comment-list .comment .comment-header a:nth-child(2) {
+	margin: 0;
+}
+
+.comment-list .comment .comment-header {
+	font-size: 15px;
+}
+.comment-list .comment .comment-header .comment-time{
+	font-size: 14px;
+}
+
+.comment-list .comment .comment-content {
+	padding: 10px;
+	word-wrap:break-word;
+}
+.comment-list .comment .replay-list{
+   border-top: 1px solid #333333;
+}
+.comment-list .comment .replay-list .comment-replay {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.comment-replay span{
+	font-size: 15px;
+}
+.comment-replay .replay-container{
+	margin-bottom: 10px;
+}
+.comment-replay .replay-container .replay-content{
+	padding: 10px;
+	word-wrap:break-word;
+}
+.comment-replay .replay-time{
+	font-size: 14px;
+	margin-left: 10px;
+}
+.comment .replay-show1,
+.comment-replay .replay-show2{
+	margin: 10px;
+}
+.comment .replay-show1 .replay-area,
+.comment-replay .replay-show2 .replay-area{
+	outline: none;
+	width: 100%;
+	border-radius: 10px;
+}
+.comment .replay-show1 .replay-btn1,
+.comment-replay .replay-show2 .replay-btn2{
+	outline: none;
+	border: none;
+}
+
+/*推荐*/
+
+.note-detail .note-right p {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.note-detail .note-right .change {
+	color: #4F4F4F;
+}
+
+.note-detail .note-right .change i {
+	font-size: 16px;
+	color: #4F4F4F;
+}
+
+.note-detail .note-right .maybe li {
+	margin: 20px 0;
+	color: #4682B4;
+}
+
+.note-detail .note-right .change:hover,
+.note-detail .note-right .maybe li a:hover,
+.note-detail .note-right .maybe li a:active {
+	color: #8B636C;
+	text-decoration: underline;
+}
+
+.note-detail .note-right .maybe div {
+	display: inline-block;
+	color: #696969;
+	font-size: 14px;
+}

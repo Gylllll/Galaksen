@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-问答-提问</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_vrzbuajnhck.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/add_question.css" />
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="editor">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 editor-left">
+						<ol class="breadcrumb path-nav">
+							<li>
+								<a href="question.html">问答</a>
+							</li>
+							<li class="active">提问</li>
+						</ol>
+						<div class="main-editor">
+							<form class="form-horizontal" id="add_question" autocomplete="off">
+								<label>问题标题</label>
+								<div class="form-group">
+									<div class="col-md-10">
+										<input type="text" class="form-control question-title" name="questionTitle" placeholder="标题字数在10至50个均可" autofocus/>
+									</div>
+								</div>
+								<label>问题的详细描述</label>
+								<div id="editor">
+								</div>
+								<label>添加相关目的地</label>
+								<div class="form-group">
+									<div class="col-md-10">
+										<input type="text" class="form-control site" name="site" placeholder="选择目的地" />
+										<div class="site-show">
+											<dl class="province clearfix"><dt>国内</dt>
+												<dd>新疆</dd>
+												<dd>西藏</dd>
+												<dd>青海</dd>
+												<dd>甘肃</dd>
+												<dd>内蒙古</dd>
+												<dd>四川</dd>
+												<dd>云南</dd>
+												<dd>贵州</dd>
+												<dd>宁夏</dd>
+												<dd>广西</dd>
+												<dd>陕西</dd>
+												<dd>湖北</dd>
+												<dd>海南</dd>
+												<dd>湖南</dd>
+												<dd>广东</dd>
+												<dd>山西</dd>
+												<dd>河南</dd>
+												<dd>河北</dd>
+												<dd>澳门</dd>
+												<dd>江西</dd>
+												<dd>香港</dd>
+												<dd>山东</dd>
+												<dd>北京</dd>
+												<dd>福建</dd>
+												<dd>江苏</dd>
+												<dd>天津</dd>
+												<dd>浙江</dd>
+												<dd>辽宁</dd>
+												<dd>上海</dd>
+												<dd>黑龙江</dd>
+												<dd>吉林</dd>
+												<dd>台湾 </dd>
+											</dl>
+											<dl class="city clearfix"><dt><span>国内</span>>><span class="current-province">西藏</span></dt>
+												<dd>拉萨</dd>
+												<dd>林芝</dd>
+												<dd>阿里</dd>
+												<dd>日喀则</dd>
+												<dd>山南</dd>
+												<dd>那曲</dd>
+												<dd>昌都</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<label>选择已开放的问题标签（可选择多个）								
+								</label>
+								<div class="tip">
+									目前仅开放了以下标签，更多标签将会逐步开放...
+								</div>
+								<div class="tags">
+									<span class="label label-default tag">景点</span>
+									<span class="label label-default tag">摄影</span>
+									<span class="label label-default tag">美食</span>
+									<span class="label label-default tag">购物</span>
+									<span class="label label-default tag">衣着</span>
+									<span class="label label-default tag">季节</span>
+									<span class="label label-default tag">开销</span>
+									<span class="label label-default tag">交通</span>
+									<span class="label label-default tag">出行方式</span>
+									<span class="label label-default tag">行程安排</span>
+									<span class="label label-default tag">其他</span>
+								</div>
+							</form>
+							<button type="button" class="btn btn-default btn-lg publish">发布问题</button>
+						</div>
+					</div>
+					<div class="col-md-4 editor-right">
+						<div>提问的正确姿势</div>
+						<p>1.问题要具体、真实，<strong>问题标题</strong>最好精简干练， 问题较多，需全面阐述时，可以添加
+							<strong>问题的详细描述</strong>。</p>
+						<p>2.给问题<strong>添加相关目的地</strong>，并选择正确的<strong>问题标签</strong>将有助于更快地获得回答。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+		<script type="text/javascript" src="js/wangEditor.min.js"></script>
+		<script type="text/javascript" src="js/add_question.js"></script>
+	</body>
+
+</html>

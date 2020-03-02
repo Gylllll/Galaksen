@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-景点-景点详情</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_otx24fqr1x.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/scenery_detail.css" />
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="scenery_detail">
+			<div class="container">
+				<ol class="breadcrumb path-nav">
+					<li>
+						<a href="scenery.html">景点</a>
+					</li>
+					<li class="active">当前：<span class="scenery-name">杭州西湖风景名胜区</span></li>
+				</ol>
+				<!--简介、发表点评-->
+				<div class="row">
+					<div class="col-md-8 detail_left">
+						<!--标题-->
+						<h3><span class="scenery-name">杭州西湖风景名胜区</span><small>/<span class="site">浙江杭州</span></small></h3>
+						<div class="h3-sub">
+							<div class="h3-sub-1" title="添加收藏"><i class="iconfont icon-shoucang"></i><span class="shoucang">收藏</span></div>
+							<div class="h3-sub-2" title="点我纠错"><i class="iconfont icon-jiucuo"></i><span class="jiucuo">纠错</span></div>
+						</div>
+						<!--副导航-->
+						<nav class="sub-nav">
+							<ul class="clearfix">
+								<li class="current">
+									<a href="#">概况</a>
+								</li>
+								<li>
+									<a href="#" class="num">点评（共<span>12条</span>）</a>
+								</li>
+							</ul>
+						</nav>
+						<!--图片轮播-->
+						<div class="swiper-container" id="swiper">
+							<div class="swiper-wrapper">
+								<a class="swiper-slide" href="img/scenery/1.jpg" target="_blank">
+									<img src="img/scenery/1.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/scenery/2.jpg" target="_blank">
+									<img src="img/scenery/2.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/scenery/3.jpg" target="_blank">
+									<img src="img/scenery/3.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/scenery/5.jpg" target="_blank">
+									<img src="img/scenery/5.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/scenery/6.jpg" target="_blank">
+									<img src="img/scenery/6.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/scenery/7.jpg" target="_blank">
+									<img src="img/scenery/7.jpg" />
+								</a>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!--景点介绍-->
+						<h4>景点简介</h4>
+						<div class="scenery-intro">
+							<p>1.首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。</p>
+							<p>2.以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。</p>
+							<p>3.出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。</p>
+							<p>4.游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。</p>
+						</div>
+						<hr/>
+						<!--其他信息-->
+						<div class="other">
+							<div>景点具体位置：<span class="detail-location">浙江省杭州市西湖区龙井路1号西湖风景名胜区</span></div>
+							<div>开放时间：<span class="open-time">全天</span></div>
+							<div>建议游玩时长：<span class="play-time">3-6小时</span></div>
+							<div>适宜游玩季节：<span class="play-season">3-5月、9-11月</span></div>
+						</div>
+					</div>
+					<div class="col-md-4 detail_right">
+						<div class="comment clearfix">
+							<div>综合评分：</div>
+							<div class="star">
+								<ul class="bottom-star clearfix">
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+								</ul>
+								<div class="top-star">
+									<ul class="top-inner clearfix">
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="avg-score"><span>5</span>分</div>
+						</div>
+						<!--点击显示 添加点评面板，再次点击隐藏-->
+						<button type="button" class="btn btn-lg" id="add-comment">
+							<i class="iconfont icon-add-fill"></i>
+							<span>我要点评</span>
+						</button>
+						<div class="add-comment-area hidden">
+							<form class="form-horizontal" autocomplete="off">
+								<!--总评分-->
+								<label>总体评分</label>
+								<div class="form-group">
+									<div class="col-md-10">
+										<ul class="star clearfix">
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+										</ul>
+										<div class="tip">
+											<div class="star-tip">不建议</div>
+											<div class="star-tip">有待改善</div>
+											<div class="star-tip">还可以</div>
+											<div class="star-tip">值得一去</div>
+											<div class="star-tip">强烈推荐</div>
+											<div class="star-tip show-tip">点击星星打分</div>
+										</div>
+									</div>
+								</div>
+								<!--内容-->
+								<label>内容（请真实客观地评价哦~）</label>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div id="editor">
+
+										</div>
+									</div>
+								</div>
+								<!--发表点评-->
+								<button type="button" class="btn" id="publish-comment">发表点评</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--分割-->
+				<div class="row">
+					<div class="col-md-8">
+						<hr/>
+					</div>
+				</div>
+				<!--显示点评部分-->
+				<div class="row" id="show-comment">
+					<div class="col-md-12">
+						<div class="comment-header">所有点评均来自Galaksen用户，按发表时间先后显示，仅供参考哦~（共<span class="comment-number">12条</span>点评）</div>
+						<!--点评列表-->
+						<div class="comment-list">
+							<!--点评内容-->
+							<div class="comment-content">
+								<div class="row">
+									<div class="col-md-2">
+										<!--点评的用户-->
+										<div class="comment-user">
+											<a href="#" class="text-center"><img class="comment-img img-circle" src="img/head1.jpg" /></a>
+											<a href="#" class="text-center comment-name">用户名</a>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<!--该用户点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--该用户点评的内容（文字）-->
+										<div class="comment-editor">
+											在杭州待了一段时间，个人觉得西湖还是蛮漂亮的，不同天气有不同的韵味，毕竟素有“晴西湖不如雨西湖,雨西湖不如夜西湖,夜西湖不如雪西湖”，但如果想把自己拍的美美的，还是选择晴天，毕竟光线较好。工作日的时候西湖苏堤白堤可以骑自行车的，建议步行加共享单车（借用后请妥善归还，不要影响交通），走走停停，来个环湖骑行，有小圈（白堤-苏堤-南山路）大圈（白堤-杨公堤-南山路）两种形式，西湖东边沿线沿湖只能步行，到雷峰塔一段有许多小景点，又可以看西湖和群山。对于断桥残雪啥的一些景点，得特定的天气去，不然就很平淡无趣。一般有两种形式俯视整个西湖，一，登雷峰塔（自南向北看），这里得说这个雷峰塔是后来新建的，缺少一种韵味，二、登宝石山（10几分钟就到山顶，登宝石流霞自北向南看）。关于人流，白堤，北山街的人一般长时间较多，同时西湖银泰周边商业气氛较浓，喜欢人多的可以去那。如果想看点不一样的西湖，建议去骑行杨公堤，看里西湖和毛家坞，时间充裕再逛逛灵隐寺等景点。最后不得不说节假日的西湖的夜景还是挺漂亮的，西湖音乐喷泉也是毕打卡的（但一般人比较多，也可以远点看）
+										</div>
+										<!--用户上传的图片-->
+										<div class="scenery-imgs">
+											<a href="img/scenery/1.jpg" target="_blank"><img src="img/scenery/1.jpg" /></a>
+											<a href="img/scenery/2.jpg" target="_blank"><img src="img/scenery/2.jpg" /></a>
+											<a href="img/scenery/3.jpg" target="_blank"><img src="img/scenery/3.jpg" /></a>
+										</div>
+										<!--发表点评的时间-->
+										<div class="comment-time">发表时间：<span>2018-10-13 05:56:31</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-content">
+								<div class="row">
+									<div class="col-md-2">
+										<!--点评的用户-->
+										<div class="comment-user">
+											<a href="#" class="text-center"><img class="comment-img img-circle" src="img/head1.jpg" /></a>
+											<a href="#" class="text-center comment-name">用户名</a>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<!--该用户点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--该用户点评的内容（文字）-->
+										<div class="comment-editor">
+											在杭州待了一段时间，个人觉得西湖还是蛮漂亮的，不同天气有不同的韵味，毕竟素有“晴西湖不如雨西湖,雨西湖不如夜西湖,夜西湖不如雪西湖”，但如果想把自己拍的美美的，还是选择晴天，毕竟光线较好。工作日的时候西湖苏堤白堤可以骑自行车的，建议步行加共享单车（借用后请妥善归还，不要影响交通），走走停停，来个环湖骑行，有小圈（白堤-苏堤-南山路）大圈（白堤-杨公堤-南山路）两种形式，西湖东边沿线沿湖只能步行，到雷峰塔一段有许多小景点，又可以看西湖和群山。对于断桥残雪啥的一些景点，得特定的天气去，不然就很平淡无趣。一般有两种形式俯视整个西湖，一，登雷峰塔（自南向北看），这里得说这个雷峰塔是后来新建的，缺少一种韵味，二、登宝石山（10几分钟就到山顶，登宝石流霞自北向南看）。关于人流，白堤，北山街的人一般长时间较多，同时西湖银泰周边商业气氛较浓，喜欢人多的可以去那。如果想看点不一样的西湖，建议去骑行杨公堤，看里西湖和毛家坞，时间充裕再逛逛灵隐寺等景点。最后不得不说节假日的西湖的夜景还是挺漂亮的，西湖音乐喷泉也是毕打卡的（但一般人比较多，也可以远点看）
+										</div>
+										<!--用户上传的图片-->
+										<div class="scenery-imgs">
+											<a href="img/scenery/1.jpg" target="_blank"><img src="img/scenery/1.jpg" /></a>
+											<a href="img/scenery/2.jpg" target="_blank"><img src="img/scenery/2.jpg" /></a>
+											<a href="img/scenery/3.jpg" target="_blank"><img src="img/scenery/3.jpg" /></a>
+										</div>
+										<!--发表点评的时间-->
+										<div class="comment-time">发表时间：<span>2018-10-13 05:56:31</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-content">
+								<div class="row">
+									<div class="col-md-2">
+										<!--点评的用户-->
+										<div class="comment-user">
+											<a href="#" class="text-center"><img class="comment-img img-circle" src="img/head1.jpg" /></a>
+											<a href="#" class="text-center comment-name">用户名</a>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<!--该用户点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--该用户点评的内容（文字）-->
+										<div class="comment-editor">
+											在杭州待了一段时间，个人觉得西湖还是蛮漂亮的，不同天气有不同的韵味，毕竟素有“晴西湖不如雨西湖,雨西湖不如夜西湖,夜西湖不如雪西湖”，但如果想把自己拍的美美的，还是选择晴天，毕竟光线较好。工作日的时候西湖苏堤白堤可以骑自行车的，建议步行加共享单车（借用后请妥善归还，不要影响交通），走走停停，来个环湖骑行，有小圈（白堤-苏堤-南山路）大圈（白堤-杨公堤-南山路）两种形式，西湖东边沿线沿湖只能步行，到雷峰塔一段有许多小景点，又可以看西湖和群山。对于断桥残雪啥的一些景点，得特定的天气去，不然就很平淡无趣。一般有两种形式俯视整个西湖，一，登雷峰塔（自南向北看），这里得说这个雷峰塔是后来新建的，缺少一种韵味，二、登宝石山（10几分钟就到山顶，登宝石流霞自北向南看）。关于人流，白堤，北山街的人一般长时间较多，同时西湖银泰周边商业气氛较浓，喜欢人多的可以去那。如果想看点不一样的西湖，建议去骑行杨公堤，看里西湖和毛家坞，时间充裕再逛逛灵隐寺等景点。最后不得不说节假日的西湖的夜景还是挺漂亮的，西湖音乐喷泉也是毕打卡的（但一般人比较多，也可以远点看）
+										</div>
+										<!--用户上传的图片-->
+										<div class="scenery-imgs">
+											<a href="img/scenery/1.jpg" target="_blank"><img src="img/scenery/1.jpg" /></a>
+											<a href="img/scenery/2.jpg" target="_blank"><img src="img/scenery/2.jpg" /></a>
+											<a href="img/scenery/3.jpg" target="_blank"><img src="img/scenery/3.jpg" /></a>
+										</div>
+										<!--发表点评的时间-->
+										<div class="comment-time">发表时间：<span>2018-10-13 05:56:31</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--分页器-->
+						<nav aria-label="Page navigation" class="foot-pagination clearfix">
+							<ul class="pagination">
+								<li>
+									<a href="#">首页</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="current-pag">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">6</a>
+								</li>
+								<li>
+									<a href="#">7</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">尾页</a>
+								</li>
+							</ul>
+							<div class="data-number">共<span class="page">17</span>页/<span class="num">119</span>条</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">错误反馈</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" autocomplete="off" id="error-form">
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>选择错误类型：</label>
+									<div class="radio-inline">
+										<label><input type="radio" name="error-group" id="intro" value="intro">景点简介</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio" name="error-group" id="location" value="location">景点具体位置</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio" name="error-group" id="open" value="open">开放时间</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>填写错误内容：</label>								
+									<textarea class="form-control" rows="5"></textarea>								
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn" id="submit-error">提交错误</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/wangEditor.min.js"></script>
+		<script type="text/javascript" src="js/scenery_detail.js"></script>
+	</body>
+
+</html>

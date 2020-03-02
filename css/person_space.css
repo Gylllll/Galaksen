@@ -1,0 +1,952 @@
+body {
+	font-size: 16px;
+	background: url(../img/background4.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+.my-nav {
+	background: rgba(205, 205, 193, .7);
+}
+
+.nav-container .login-after .user .user-menu,
+.nav-container .login-after .message .message-menu {
+	background: rgba(205, 205, 193, .7);
+}
+
+.nav-container .login-after .user .user-menu li:hover,
+.nav-container .login-after .message .message-menu li:hover {
+	background: #B5B5B5;
+}
+
+.nav-container .login-after .user:hover>a:first-child,
+.nav-container .login-after .message:hover>a:first-child {
+	border-left: 1px solid #8B8B83;
+	border-right: 1px solid #8B8B83;
+}
+
+.nav-container .login-after .user:hover .user-menu,
+.nav-container .login-after .message:hover .message-menu {
+	border-color: #8B8B83;
+}
+button {
+	outline: none;
+}
+
+
+/*返回顶部*/
+
+.top {
+	position: fixed;
+	top: 80%;
+	right: 20px;
+}
+
+#top-btn {
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+
+#top-btn:hover {
+	background: rgba(238, 169, 184,1);
+}
+
+
+/*person-container*/
+
+.person-container {
+	margin: 20px 0;
+}
+
+.person-container .container {
+	padding: 20px 0;
+	background: rgba(255, 255, 255, .8);
+	border-radius: 7px;
+}
+
+
+/*左边 person-header */
+
+.person-left .person-header>div {
+	margin: 10px 0;
+}
+
+.person-header .person-img {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #696969;
+}
+
+.person-header .person-name i {
+	font-size: 16px;
+}
+
+.person-header .change .editor-info i {
+	font-size: 14px;
+}
+
+.person-intro>div {
+	width: 80%;
+	margin: auto;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+.person-header .num>a {
+	color: #363636;
+	margin: 0 7px;
+}
+
+.person-header .change>a {
+	display: inline-block;
+	font-size: 14px;
+	color: #828282;
+	margin: 0 7px;
+}
+
+.person-header .num>a:hover,
+.person-header .change>a:hover {
+	color: #8B668B;
+	text-decoration: underline;
+}
+
+hr {
+	border-top: 1px solid #363636;
+	width: 80%;
+}
+
+
+/*左边 aside-nav*/
+
+.aside-nav span {
+	color: #363636;
+	display: inline-block;
+	height: 60px;
+	line-height: 40px;
+	width: 80%;
+	padding: 10px 0;
+	background: rgba(162, 181, 205, .5);
+	border-right: 5px solid transparent;
+}
+
+.aside-nav span.nav-active,
+.aside-nav span:hover {
+	background: #A2B5CD;
+	color: #8B636C;
+	border-right: 5px solid #8B636C;
+}
+
+
+/*右边*/
+
+.person-right .show-area>div {
+	width: 95%;
+	background: rgba(162, 181, 205, .5);
+	padding: 20px;
+}
+
+.person-right .show-area .breadcrumb {
+	background: transparent;
+	margin-bottom: 0;
+}
+
+.breadcrumb>li+li:before,
+.breadcrumb>li {
+	color: #696969;
+}
+
+
+/*粉丝和关注的人*/
+
+.person-right .show-area .fans-list .fans,
+.person-right .show-area .care-list .care {
+	width: 50%;
+	float: left;
+	padding: 10px 30px;
+}
+
+.fans-list .fans .fans-img,
+.care-list .care .care-img {
+	width: 50px;
+	height: 50px;
+}
+
+.fans-list .fans a,
+.care-list .care a {
+	display: inline-block;
+	margin-right: 7px;
+	color: #363636;
+}
+
+.fans-list .fans button {
+	margin-left: 30%;
+	outline: none;
+	background: #9C9C9C;
+}
+
+.fans-list .fans button.care {
+	background: #EEB4B4;
+}
+
+.care-list .care button {
+	margin-left: 30%;
+	outline: none;
+	background: #EEB4B4;
+}
+
+.care-list .care button.cancle {
+	background: #9C9C9C;
+}
+
+
+/*没有粉丝、没有关注的人*/
+
+.person-right .show-area div.fans-list-null,
+.person-right .show-area div.care-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*我的游记*/
+
+
+/*导航*/
+
+.person-right .my-travel .my-travel-nav {
+	border-bottom: 3px solid #A2B5CD;
+}
+
+.person-right .my-travel .breadcrumb {
+	display: inline-block;
+}
+
+.person-right .my-travel .write-note i {
+	font-size: 20px;
+}
+
+.person-right .my-travel .write-note {
+	display: inline-block;
+	width: 20%;
+	height: 30px;
+	background-color: #EEA9B8;
+	border-color: transparent;
+	border-radius: 10px;
+	padding: 0;
+	font-size: 16px;
+	outline: none;
+	margin-left: 20px;
+}
+
+.person-right .my-travel .my-travel-nav>li {
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 0;
+	background: rgba(255, 250, 250, .5);
+	cursor: pointer;
+	border-radius: 4px 4px 0 0;
+}
+
+.person-right .my-travel .my-travel-nav>li.my-active {
+	color: #555;
+	background: #A2B5CD;
+}
+
+
+/*已发表*/
+
+.my-travel .sent-list .note-num {
+	padding: 10px;
+	padding-bottom: 0;
+}
+
+.my-travel .sent-list .travel-note {
+	border-bottom: 1px solid #333333;
+	padding: 15px 10px;
+}
+
+.my-travel .sent-list .travel-note .note-info {
+	font-size: 15px;
+}
+
+.my-travel .sent-list .travel-note .note-info i {
+	font-size: 16px;
+	margin-right: 3px;
+}
+
+.my-travel .sent-list .travel-note .note-info a {
+	color: #4F4F4F;
+}
+
+.my-travel .sent-list .travel-note .note-info a:hover {
+	text-decoration: underline;
+}
+
+.my-travel .sent-list .travel-note .note-info>div {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.my-travel .sent-list .travel-note .note-info .delete {
+	margin-left: 10%;
+}
+
+
+/*草稿箱*/
+
+.my-travel .draft-list .draft-num {
+	padding: 10px;
+	padding-bottom: 0;
+}
+
+.my-travel .draft-list .travel-note {
+	border-bottom: 1px solid #333333;
+	padding: 15px 10px;
+}
+
+.my-travel .draft-list .travel-note .note-info {
+	font-size: 15px;
+}
+
+.my-travel .draft-list .travel-note .note-info>div {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.my-travel .draft-list .travel-note .note-info>div.alter {
+	margin-left: 40px;
+}
+
+
+/*删除、修改样式*/
+
+.person-right .my-travel .delete>a,
+.person-right .my-travel .alter>a {
+	color: #4F4F4F;
+	font-size: 14px;
+}
+
+.person-right .my-travel .delete:hover,
+.person-right .my-travel .alter:hover {
+	text-decoration: underline;
+	font-size: 14px;
+}
+
+
+/*没有发表游记、没有草稿*/
+
+.my-travel .sent-list-null,
+.my-travel .draft-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*我的点评*/
+
+
+/*有点评*/
+
+.person-right .my-comment .comment-list .comment-content {
+	border-bottom: 1px solid #333333;
+	padding: 15px;
+}
+
+.comment-content .comment-header,
+.comment-content .delete {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.comment-content .comment-header>a {
+	font-weight: 550;
+	color: #8B668B;
+}
+
+.comment-content .delete>a {
+	font-size: 14px;
+	color: #4F4F4F;
+}
+
+.comment-content .comment-header>a:hover,
+.comment-content .delete>a:hover {
+	text-decoration: underline;
+}
+
+.comment-content .comment>div {
+	float: left;
+	height: 45px;
+	line-height: 45px;
+}
+
+.comment-content .comment .avg-score {
+	margin-left: 5px;
+	font-weight: normal;
+}
+
+.comment-content .comment .star {
+	position: relative;
+}
+
+.comment-content .comment .star .bottom-star li,
+.comment-content .comment .star .top-star .top-inner li {
+	float: left;
+}
+
+.comment-content .comment .star .bottom-star li>i {
+	color: #999;
+	font-size: 16px;
+}
+
+.comment-content .comment .star .top-star .top-inner li>i {
+	color: #ffa800;
+	font-size: 16px;
+}
+
+.comment-content .comment .star .top-star {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 80%;
+}
+
+.comment-content .comment .star .top-star .top-inner {
+	width: 1000%;
+}
+
+
+/*点评的内容及图片*/
+
+.comment-content .comment-editor,
+.comment-content .comment-imgs {
+	margin-bottom: 10px;
+}
+
+.comment-content .comment-editor {
+	line-height: 1.5em;
+}
+
+.comment-content .comment-imgs a {
+	display: inline-block;
+	margin: 7px 3px;
+}
+
+.comment-content .comment-imgs a img {
+	width: 200px;
+	height: 140px;
+}
+
+
+/*没有点评*/
+
+.person-right .my-comment .comment-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*我的收藏*/
+
+.person-right .collect-list .my-collect-nav {
+	border-bottom: 3px solid #A2B5CD;
+}
+
+.person-right .collect-list .my-collect-nav>li {
+	float: left;
+	padding: 10px 15px;
+	margin: 10px;
+	margin-bottom: 0;
+	background: rgba(255, 250, 250, .5);
+	cursor: pointer;
+	border-radius: 4px 4px 0 0;
+}
+
+.person-right .collect-list .my-collect-nav>li.my-active {
+	color: #555;
+	background: #A2B5CD;
+}
+
+
+/*景点、美食*/
+.collect-list .scenery-list .scenery-num,
+.collect-list .food-list .food-num,
+.collect-list .note-list .note-num {
+	padding: 10px;
+	padding-bottom: 0;
+}
+.collect-list .scenery-list .scenery,
+.collect-list .food-list .food,
+.collect-list .note-list .note {
+	padding: 15px;
+	border-bottom: 1px solid #9C9C9C;
+}
+
+.scenery-list .scenery a,
+.food-list .food a,
+.note-list .note a {
+	margin-right: 20px;
+	color: #696969;
+	font-weight: 550;
+	vertical-align: middle;
+	font-size: 18px;
+}
+
+.scenery-list .scenery a:hover,
+.food-list .food a:hover,
+.note-list .note a:hover {
+	color: #8B636C;
+}
+
+.scenery-list .scenery button,
+.food-list .food button,
+.note-list .note button {
+	outline: none;
+	background: #EEB4B4;
+}
+
+.scenery-list .scenery button.cancle,
+.food-list .food button.cancle,
+.note-list .note button.cancle {
+	background: #9C9C9C;
+}
+
+
+/*游记*/
+
+.collect-list .note-list .note p {
+	display: inline-block;
+	width: 80%;
+	margin: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.collect-list .note-list .note button {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+
+/*没有收藏景点、美食、游记*/
+
+.collect-list .scenery-list-null,
+.collect-list .food-list-null,
+.collect-list .note-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*我的提问*/
+/*有提问*/
+
+.person-right .my-question .question-list .question {
+	border-bottom: 1px solid #333333;
+	padding: 15px;
+}
+
+.question .question-title a {
+	color: #000;
+	font-weight: 550;
+}
+
+.question .question-title a:hover {
+	color: #8B636C;
+}
+
+.question .question-title i {
+	font-size: 16px;
+}
+
+.question .question-title .site {
+	margin-right: 10px;
+	color: #8B636C;
+}
+
+.question .tags {
+	margin: 10px 0;
+}
+
+.question .other div {
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.question .other a {
+	color: #8B668B;
+}
+
+.question .other a:hover {
+	text-decoration: underline;
+}
+
+
+/*没有提问*/
+
+.person-right .my-question .question-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*我的回答*/
+
+
+/*有回答*/
+
+.person-right .my-answer .answer-list .answer {
+	border-bottom: 1px solid #333333;
+	padding: 15px;
+}
+
+.answer .answer-header {
+	padding-bottom: 10px;
+}
+
+.answer .answer-header a {
+	color: #8B668B;
+	font-weight: 550;
+}
+
+.answer .answer-header a:hover {
+	text-decoration: underline;
+}
+
+.answer .answer-detail .answer-content {
+	padding: 10px 0;
+	line-height: 1.7em;
+}
+
+.answer .answer-detail>a,
+.answer .answer-detail .delete>a {
+	color: #8B668B;
+	font-size: 14px;
+}
+
+.answer .answer-detail>a:hover,
+.answer .answer-detail .delete>a:hover {
+	text-decoration: underline;
+}
+
+.answer .answer-detail .delete {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+
+/*没有回答*/
+
+.person-right .my-answer .answer-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*我关注的问题*/
+
+
+/*有关注*/
+
+.person-right .care-question .care-question-list .question {
+	padding: 15px;
+	border-bottom: 1px solid #9C9C9C;
+}
+
+.care-question-list .question p {
+	display: inline-block;
+	font-size: 18px;
+	width: 80%;
+	margin: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.care-question-list .question a {
+	margin-right: 20px;
+	color: #696969;
+	font-weight: 550;
+}
+
+.care-question-list .question a:hover {
+	color: #8B636C;
+}
+
+.care-question-list .question button {
+	outline: none;
+	background: #EEB4B4;
+}
+
+.care-question-list .question button.cancle {
+	background: #9C9C9C;
+}
+
+
+/*没有关注*/
+
+.person-right .care-question .care-question-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*点赞的游记*/
+
+.person-right .my-like .like-list .like {
+	padding: 15px;
+	border-bottom: 1px solid #9C9C9C;
+}
+
+.my-like .like-list .like p {
+	display: inline-block;
+	font-size: 18px;
+	width: 80%;
+	margin: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.my-like .like-list .like a {
+	margin-right: 20px;
+	color: #696969;
+	font-weight: 550;
+}
+
+.my-like .like-list .like a:hover {
+	color: #8B636C;
+}
+
+.my-like .like-list .like button {
+	outline: none;
+	background: #EEB4B4;
+}
+
+.my-like .like-list .like button.cancle {
+	background: #9C9C9C;
+}
+
+
+/*没有点赞的游记*/
+
+.person-right .my-like .like-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*消息*/
+
+
+/*导航*/
+
+.person-right .message-list .message-nav {
+	border-bottom: 3px solid #A2B5CD;
+}
+
+.person-right .message-list .message-nav>li {
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 0;
+	background: rgba(255, 250, 250, .5);
+	cursor: pointer;
+	border-radius: 4px 4px 0 0;
+}
+
+.person-right .message-list .message-nav>li.my-active {
+	color: #555;
+	background: #A2B5CD;
+}
+
+
+/*消息的状态*/
+
+.message-list .message-status {
+	margin: 10px 0;
+}
+
+.message-list .message-status>a {
+	color: #1C1C1C;
+	margin-left: 30px;
+	font-weight: 550;
+	font-size: 15px;
+}
+
+.message-list .message-status>a:hover {
+	text-decoration: underline;
+}
+
+.message-list .new {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #CD9B9B;
+}
+
+.message-list .time {
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+}
+
+
+/*有系统消息*/
+
+.message-list .system-list .system {
+	background: #EEE9E9;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.message-list .system-list .system>div {
+	margin-bottom: 10px;
+}
+
+.system-list .system p,
+.system-list .system .system-content {
+	font-size: 14px;
+	color: #828282;
+}
+
+
+/*有收到的赞*/
+
+.message-list .like-list .like {
+	background: #EEE9E9;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.message-list .like-list .like>div {
+	margin-bottom: 10px;
+}
+
+.message-list .like-list .like a {
+	color: #696969;
+	font-weight: 550;
+	margin-right: 5px;
+}
+
+.message-list .like-list .like a:hover {
+	color: #8B636C;
+	text-decoration: underline;
+}
+
+.message-list .like-list .like .like-content-answer .answer {
+	margin-top: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/*有收到的回复*/
+
+.message-list .replay-list .replay {
+	background: #EEE9E9;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.message-list .replay-list .replay:hover {
+	cursor: pointer;
+	background: rgba(255, 250, 250, .8);
+}
+
+.message-list .replay-list .replay>div {
+	margin-bottom: 10px;
+}
+
+.message-list .replay-list .replay a {
+	color: #696969;
+	font-weight: 550;
+	margin-right: 5px;
+}
+
+.new-fans {
+	background: #000000;
+}
+
+
+/*没有系统消息 没有收到的赞 没有收到的回复*/
+
+.message-list .system-list-null,
+.message-list .like-list-null,
+.message-list .replay-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*模态框*/
+
+#myModal1 .modal-content {
+	width: 50%;
+}
+
+#myModal2 .modal-content {
+	width: 60%;
+}
+
+#choice-img {
+	position: relative;
+	background-size: cover;
+	background: #CFCFCF;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
+#choice-img:hover {
+	cursor: pointer;
+}
+
+#choice-img i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+}
+
+.img-input {
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}

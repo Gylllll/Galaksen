@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-设置新密码</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrapValidator.min.css" />
+		<link rel="stylesheet" href="css/reset_pwd.css" />
+	</head>
+
+	<body>
+		<!--表单-->
+		<form class="form-horizontal" id="reset_pwd" action="" autocomplete="off">
+			<h2 class="text-center">设置新密码</h2>
+			<p>短信验证码已下发，请注意查收，<button type="button" id="acquire">验证码在120s内有效</button>
+			</p>
+			<p>请输入6-18位字母(区分大小写)、数字</p>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="password" class="form-control" id="passWord" name="passWord" placeholder="输入密码" autofocus/>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="password" class="form-control" id="confirm" name="confirm" placeholder="请再次输入密码" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<input type="text" class="form-control" id="code" name="code" placeholder="请输入短信验证码" />
+					<div id="error_tip">验证码错误</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<button type="button" class="my-btn" id="complete">完成</button>
+				</div>
+			</div>
+		</form>
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body">
+						您已成功修改密码，
+						<a href="login.html">点我登录</a>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" id="know">我知道了
+				</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+		<script type="text/javascript" src="js/reset_pwd.js" ></script>
+	</body>
+
+</html>

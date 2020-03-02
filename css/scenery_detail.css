@@ -1,0 +1,357 @@
+body {
+	font-size: 16px;
+	background: rgba(188, 210, 238, 0.4);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+/*返回顶部*/
+
+.top {
+	position: fixed;
+	top: 80%;
+	right: 20px;
+}
+
+#top-btn {
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+
+#top-btn:hover {
+	background: rgba(238, 169, 184, .5);
+}
+
+/*path-nav*/
+.scenery_detail .path-nav {
+	margin-top: 20px;
+	background: transparent;
+}
+/*标题*/
+.scenery_detail .detail_left h3,
+.scenery_detail .detail_left .h3-sub{
+	margin-right: 50px;
+	display: inline-block;
+}
+.scenery_detail .detail_left .h3-sub div{
+	display: inline-block;
+	margin-right: 20px;
+	cursor: pointer;
+}
+/*收藏前*/
+.scenery_detail .detail_left .h3-sub .h3-sub-1 i{
+	color: #8B636C;;
+}
+/*收藏后*/
+.scenery_detail .detail_left .h3-sub .h3-sub-1.after i{
+	color:#EE5C42;
+}
+/*sub-nav*/
+.scenery_detail .detail_left .sub-nav{
+	padding-top: 10px;
+}
+.scenery_detail .detail_left .sub-nav li {
+	float: left;
+	height: 40px;
+	padding: 0 15px;
+	margin-right: 10px;
+}
+.scenery_detail .detail_left .sub-nav li:hover,
+.scenery_detail .detail_left .sub-nav li.current{
+	border-bottom: 3px solid #6C7B8B;
+}
+
+.scenery_detail .detail_left .sub-nav li.current>a {
+	color: #6C7B8B;
+}
+
+.scenery_detail .detail_left .sub-nav li:hover>a {
+	color: #6C7B8B;
+}
+
+.scenery_detail .detail_left .sub-nav li>a {
+	line-height: 40px;
+	display: inline-block;
+	color: #000;
+	font-size: 18px;
+}
+
+/*轮播*/
+#swiper{
+    width:75%;
+    height: 300px;
+	margin-top: 20px;
+	margin-left: 0;
+}
+#swiper .swiper-slide>img{
+	display: block;
+    width: 100%;
+    height: 100%; 
+}
+#swiper .swiper-pagination .swiper-pagination-bullet {
+	width: 15px;
+	height: 7px;
+	border-radius: 0;
+	background: #EEE9E9;
+	opacity: 0.8;
+}
+#swiper .swiper-pagination .swiper-pagination-bullet-active {
+	background: #000;
+	opacity: 1;
+}
+
+/*简介*/
+.scenery_detail .detail_left h4{
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.scenery_detail .detail_left .scenery-intro{
+	padding-top: 20px;
+}
+hr {
+	border-top: 1px solid #363636;
+}
+
+/*其他*/
+.scenery_detail .detail_left .other div{
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.scenery_detail .detail_left .other div span{
+		color: #4F4F4F;
+}
+
+/*右边*/
+/*当前评分*/
+.detail_right .comment>div{
+	float: left;
+	height: 45px;
+	line-height: 45px;
+	font-weight: 600;
+}
+.detail_right .comment .avg-score{
+	margin-left: 5px;
+	font-weight:normal;	
+}
+.detail_right .comment .star {
+	position: relative;
+}
+
+.detail_right .comment .star .bottom-star li,
+.detail_right .comment .star .top-star .top-inner li {
+	float: left;
+}
+
+.detail_right .comment .star .bottom-star li>i {
+	color: #999;
+}
+
+.detail_right .comment .star .top-star .top-inner li>i{
+	color: #ffa800;
+}
+
+.detail_right .comment .star .top-star {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 50%;
+}
+
+.detail_right .comment .star .top-star .top-inner {
+	width: 1000%;
+}
+
+/*我要点评*/
+.scenery_detail .detail_right #add-comment {
+	width: 100%;
+	margin: 20px 0;
+	color: #fff;
+	background: #8B636C;
+	outline: none;
+}
+
+.scenery_detail .detail_right #add-comment i {
+	font-size: 20px;
+	color: #fff;
+}
+/*添加点评*/
+.detail_right .add-comment-area .star,
+.detail_right .add-comment-area .tip{
+	float: left;
+	margin-right: 10px;
+}
+.detail_right .add-comment-area .tip{
+	height:40px;
+	line-height: 40px;
+}
+
+.detail_right .add-comment-area .star>li{
+	float: left;
+}
+.detail_right .add-comment-area .star>li>i{
+	color: #696969;
+}
+.detail_right .add-comment-area .star>li>i.yellow{
+	color: #ffa800;
+}
+/*评价提示*/
+.detail_right .add-comment-area .tip .star-tip{
+	display: none;
+}
+.detail_right .add-comment-area .tip .star-tip.show-tip{
+	display: block;
+}
+/*内容*/
+#editor{
+	margin-top: 10px;
+}
+.w-e-text-container{
+	background: #FFFFFF;
+	height: 300px !important;
+}
+
+/*发布按钮*/
+.scenery_detail .detail_right #publish-comment {
+	width: 50%;
+	color: #fff;
+	font-size: 16px;
+	background: #8B636C;
+	outline: none;
+}
+
+/*显示点评*/
+.scenery_detail .comment-header{
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px 0;
+}
+.scenery_detail .comment-list {
+	padding:10px 0;
+}
+.scenery_detail .comment-list .comment-content{
+	width: 80%;
+	padding:20px;
+	background:#E0EEEE;
+	border:1px dashed #838B8B;
+	border-radius: 7px;
+	margin-bottom: 20px;
+}
+.comment-content{
+  font-size: 15px;
+}
+.scenery_detail .comment-list .comment-content .comment-user>a{
+	display: block;
+	margin: 10px 0;
+	color: #8B636C;
+}
+.comment-content .comment-user .comment-img{
+	width: 50px;
+	height: 50px;
+}
+
+/*每个用户的评分星级*/
+.comment-content .comment>div{
+	float: left;
+	height: 45px;
+	line-height: 45px;
+}
+.comment-content .comment .avg-score{
+	margin-left: 5px;
+	font-weight:normal;	
+}
+.comment-content .comment .star {
+	position: relative;
+}
+
+.comment-content .comment .star .bottom-star li,
+.comment-content .comment .star .top-star .top-inner li {
+	float: left;
+}
+
+.comment-content .comment .star .bottom-star li>i {
+	color: #999;
+	font-size:16px;
+}
+
+.comment-content .comment .star .top-star .top-inner li>i{
+	color: #ffa800;
+	font-size:16px;
+}
+
+.comment-content .comment .star .top-star {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 80%;
+}
+
+.comment-content .comment .star .top-star .top-inner {
+	width: 1000%;
+}
+
+/*用户点评的内容及图片及时间*/
+.comment-content .comment-editor,
+.comment-content .scenery-imgs,
+.comment-content .comment-time{
+	margin-bottom: 10px;
+}
+.comment-content .comment-editor{
+	line-height: 1.5em;	
+}
+.comment-content .scenery-imgs a{
+	display: inline-block;
+	margin: 7px 3px;
+}
+.comment-content .scenery-imgs a img{
+	width: 200px;
+	height: 140px;
+}
+
+/*分页器*/
+.foot-pagination .pagination>.current-pag>a{
+	    background-color:#EEA9B8;
+}
+.foot-pagination .pagination{
+	float: left;
+}
+.foot-pagination .data-number{
+	float: left;
+	display: inline-block;
+    padding:10px;
+    margin: 20px 0;
+}
+
+/*模态框*/
+.modal-header,.modal-body{
+	padding: 15px 30px;	
+}
+.modal-body{
+	padding-bottom: 0;
+}
+.modal-footer{
+	border: none;
+}
+#submit-error{
+	background:	#8DB6CD;
+}
+#myModal button{
+	outline: none;
+}
+
+
+

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-个人空间</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_yh4mjrx1ocs.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/toastr.min.css" />
+		<link rel="stylesheet" href="css/person_space.css" />
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="person-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 person-left">
+						<!--头部-->
+						<div class="text-center person-header">
+							<img class="img-circle person-img" src="img/head1.jpg">
+							<div class="person-name">
+								昵称：<span>galaksen</span>
+								<span class="person-sex"><i class="iconfont icon-nv"></i></span>
+							</div>
+							<div class="change">
+								<a href="javascript:;" class="change-img">更换头像</a>
+								<a href="javascript:;" class="editor-info"><i class="iconfont icon-xiugai"></i>修改资料</a>
+							</div>
+							<div class="person-id">ID：<span>04120412</span></div>
+							<div class="person-intro">
+								<div>个人简介：<span>还没有介绍~还没有介绍~还没有介绍~还没有介绍~</span></div>
+							</div>
+							<div class="num">
+								<a href="javascript:;">粉丝<span class="fans-num">8</span></a>
+								<span>|</span>
+								<a href="javascript:;">关注<span class="care-num">2</span></a>
+							</div>
+						</div>
+						<hr/>
+						<!--主体导航-->
+						<div class="text-center aside-nav">
+							<ul>
+								<li><span class="nav-active">我的游记</span></li>
+								<li><span>我的点评</span></li>
+								<li><span>我的收藏</span></li>
+								<li><span>我的提问</span></li>
+								<li><span>我的回答</span></li>
+								<li><span>关注的问题</span></li>
+								<li><span>点赞的游记</span></li>
+								<li><span>消息</span></li>
+							</ul>
+						</div>
+					</div>
+					<!--显示-->
+					<div class="col-md-8 person-right">
+						<div class="show-area">
+							<!--粉丝-->
+							<div class="fans-list clearfix hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>我的粉丝（共<span class="fans-num">4个</span>）</li>
+								</ol>
+								<div class="fans">
+									<a href="javascript:;"><img class="img-circle fans-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="fans-name">用户名1</span></a>
+									<button type="button" class="btn">关注</button>
+								</div>
+								<div class="fans">
+									<a href="javascript:;"><img class="img-circle fans-img" src="img/2.jpg" /></a>
+									<a href="javascript:;"><span class="fans-name">用户名2</span></a>
+									<button type="button" class="btn">关注</button>
+								</div>
+								<div class="fans">
+									<a href="javascript:;"><img class="img-circle fans-img" src="img/3.jpg" /></a>
+									<a href="javascript:;"><span class="fans-name">用户名3</span></a>
+									<button type="button" class="btn">关注</button>
+								</div>
+								<div class="fans">
+									<a href="javascript:;"><img class="img-circle fans-img" src="img/4.jpg" /></a>
+									<a href="javascript:;"><span class="fans-name">用户名4</span></a>
+									<button type="button" class="btn">关注</button>
+								</div>
+							</div>
+							<!--没有粉丝时显示-->
+							<div class="fans-list-null text-center hidden">
+								<p>你还没有粉丝哦~</p>
+								<p>多发表<strong>内容优质的游记</strong>或提供<strong>优质的回答</strong>可以收获你的fans哦~</p>
+							</div>
+							<!--关注的人-->
+							<div class="care-list clearfix hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>我关注的人（共<span class="fans-num">4个</span>）</li>
+								</ol>
+								<div class="care">
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+									<button type="button" class="btn">已关注</button>
+								</div>
+								<div class="care">
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+									<button type="button" class="btn">已关注</button>
+								</div>
+								<div class="care">
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+									<button type="button" class="btn">已关注</button>
+								</div>
+							</div>
+							<!--没有关注的人时显示-->
+							<div class="care-list-null text-center hidden">
+								<p>你还没有关注任何人哦~</p>
+							</div>
+							<!--我的游记-->
+							<div class="my-travel">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>我的游记</li>
+								</ol>
+								<a class="btn btn-default write-note" href="editor_travel_note.html" role="button">
+									<i class="iconfont icon-xieyouji"></i> 写游记
+								</a>
+								<ul class="my-travel-nav clearfix">
+									<li class="sent my-active">已发表</li>
+									<li class="draft">草稿箱</li>
+								</ul>
+								<!--已发表-->
+								<!--有发表-->
+								<div class="sent-list hidden">
+									<div class="note-num">已发表：<span>15篇</span></div>
+									<div class="travel-note">
+										<h4 class="note-title"><a href="javascript:;">香港|山海之间的钢铁森林(详细攻略+美食推荐)</a></h4>
+										<div class="note-info">
+											<div class="sent-time">2019-12-14 23:24</div>
+											<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+											<div class="note-like"><i class="iconfont icon-like"></i>
+												<a href="travel_like_collect.html">点赞(123)</a>
+											</div>
+											<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(5)</span></div>
+											<div class="note-collect"><i class="iconfont icon-xingxing"></i>
+												<a href="travel_like_collect.html">收藏(5)</a>
+											</div>
+											<div class="delete">
+												<a href="javascript:;">删除</a>
+											</div>
+										</div>
+									</div>
+									<div class="travel-note">
+										<h4 class="note-title"><a href="javascript:;">香港|山海之间的钢铁森林(详细攻略+美食推荐)</a></h4>
+										<div class="note-info">
+											<div class="sent-time">2019-12-14 23:24</div>
+											<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+											<div class="note-like"><i class="iconfont icon-like"></i>
+												<a href="travel_like_collect.html">点赞(123)</a>
+											</div>
+											<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(5)</span></div>
+											<div class="note-collect"><i class="iconfont icon-xingxing"></i>
+												<a href="travel_like_collect.html">收藏(5)</a>
+											</div>
+											<div class="delete">
+												<a href="javascript:;">删除</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--未发表-->
+								<div class="sent-list-null text-center hidden">
+									<p>你还没有发表过游记哦~</p>
+								</div>
+								<!--草稿-->
+								<!--有草稿-->
+								<div class="draft-list hidden">
+									<div class="draft-num">草稿：<span>5篇</span></div>
+									<div class="travel-note">
+										<h4 class="note-title"><a href="javascript:;">香港|山海之间的钢铁森林(详细攻略+美食推荐)</a></h4>
+										<div class="note-info">
+											<div class="save-time">上次保存时间：<span>2019-12-14 23:24</span></div>
+											<div class="alter">
+												<a href="javascript:;">修改</a>
+											</div>
+											<div class="delete">
+												<a href="javascript:;">删除</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--没有草稿-->
+								<div class="draft-list-null text-center hidden">
+									<p>草稿箱空空如也~</p>
+								</div>
+							</div>
+							<!--我的点评-->
+							<div class="my-comment hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>我的点评（共<span class="comment-num">3个</span>）</li>
+								</ol>
+								<!--有点评时-->
+								<div class="comment-list hidden">
+									<div class="comment-content">
+										<div class="comment-header">你在<span class="comment-time">2018-10-13 05:56:31</span>，点评了
+											<a href="food.html"><span class="type">美食</span></a>——
+											<a href="food_detail.html">“<span class="comment-name">西湖醋鱼</span>”</a>
+										</div>
+										<div class="delete">
+											<a href="javascript:;">删除该点评</a>
+										</div>
+										<!--点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--点评的内容（文字）-->
+										<div class="comment-editor">
+											西湖醋鱼是最正宗的西湖草鱼来做，草鱼的刺比较多，肉也没有其它价格相比较而言贵的鱼好吃细腻，但是用醋来配上草鱼就可以制作出来非常极其美味的味道。由于草鱼身上都会带一点土的味道，所以店家一般在草鱼要被做成菜的前几天，什么都不投喂，这样草鱼就会把自身的杂物排出去一些，土腥味道也就没有那么浓重了。所以我们如果想要吃到没那么土腥的西湖醋鱼的话，小编教大家一个窍门，就是在选择饭店的时候最好要看一看这家店有没有专门喂养草鱼的鱼池，如果有的话这家店做的西湖醋鱼起码要比没有的他们做的正宗。
+										</div>
+										<!--上传的图片-->
+										<div class="comment-imgs">
+											<a href="img/food/1.jpg" target="_blank"><img src="img/food/1.jpg" /></a>
+											<a href="img/food/2.jpg" target="_blank"><img src="img/food/2.jpg" /></a>
+											<a href="img/food/3.jpg" target="_blank"><img src="img/food/3.jpg" /></a>
+										</div>
+									</div>
+									<div class="comment-content">
+										<div class="comment-header">你在<span class="comment-time">2018-10-13 05:56:31</span>，点评了
+											<a href="food.html"><span class="type">景点</span></a>——
+											<a href="food_detail.html">“<span class="comment-name">杭州西湖风景名胜区</span>”</a>
+										</div>
+										<div class="delete">
+											<a href="javascript:;">删除该点评</a>
+										</div>
+										<!--点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--点评的内容（文字）-->
+										<div class="comment-editor">
+											在杭州待了一段时间，个人觉得西湖还是蛮漂亮的，不同天气有不同的韵味，毕竟素有“晴西湖不如雨西湖,雨西湖不如夜西湖,夜西湖不如雪西湖”，但如果想把自己拍的美美的，还是选择晴天，毕竟光线较好。工作日的时候西湖苏堤白堤可以骑自行车的，建议步行加共享单车（借用后请妥善归还，不要影响交通），走走停停，来个环湖骑行，有小圈（白堤-苏堤-南山路）大圈（白堤-杨公堤-南山路）两种形式，西湖东边沿线沿湖只能步行，到雷峰塔一段有许多小景点，又可以看西湖和群山。对于断桥残雪啥的一些景点，得特定的天气去，不然就很平淡无趣。一般有两种形式俯视整个西湖，一，登雷峰塔（自南向北看），这里得说这个雷峰塔是后来新建的，缺少一种韵味，二、登宝石山（10几分钟就到山顶，登宝石流霞自北向南看）。关于人流，白堤，北山街的人一般长时间较多，同时西湖银泰周边商业气氛较浓，喜欢人多的可以去那。如果想看点不一样的西湖，建议去骑行杨公堤，看里西湖和毛家坞，时间充裕再逛逛灵隐寺等景点。最后不得不说节假日的西湖的夜景还是挺漂亮的，西湖音乐喷泉也是毕打卡的（但一般人比较多，也可以远点看）
+										</div>
+										<!--上传的图片-->
+										<div class="comment-imgs">
+											<a href="img/scenery/1.jpg" target="_blank"><img src="img/scenery/1.jpg" /></a>
+											<a href="img/scenery/2.jpg" target="_blank"><img src="img/scenery/2.jpg" /></a>
+											<a href="img/scenery/3.jpg" target="_blank"><img src="img/scenery/3.jpg" /></a>
+										</div>
+									</div>
+								</div>
+								<!--没有点评时-->
+								<div class="comment-list-null text-center hidden">
+									<p>你还没有任何点评哦~</p>
+								</div>
+							</div>
+							<!--我的收藏-->
+							<div class="collect-list hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>我的收藏</li>
+								</ol>
+								<ul class="my-collect-nav clearfix">
+									<li class="scenery my-active">景点</li>
+									<li class="food">美食</li>
+									<li class="note">游记</li>
+								</ul>
+								<!--景点-->
+								<!--有收藏-->
+								<div class="scenery-list hidden">
+									<div class="scenery-num">景点：<span>15个</span></div>
+									<div class="scenery text-center">
+										<a href="javascript:;" class="scenery-name">杭州西湖风景名胜区</a>
+										<button type="button" class="btn">已收藏</button>
+									</div>
+									<div class="scenery text-center">
+										<a href="javascript:;" class="scenery-name">杭州西湖风景名胜区</a>
+										<button type="button" class="btn">已收藏</button>
+									</div>
+								</div>
+								<!--无收藏-->
+								<div class="scenery-list-null text-center hidden">
+									<p>你还没有收藏任何景点哦~</p>
+								</div>
+								<!--美食-->
+								<!--有收藏-->
+								<div class="food-list hidden">
+									<div class="food-num">美食：<span>15个</span></div>
+									<div class="food text-center">
+										<a href="javascript:;" class="food-name">西湖醋鱼</a>
+										<button type="button" class="btn">已收藏</button>
+									</div>
+									<div class="food text-center">
+										<a href="javascript:;" class="food-name">西湖醋鱼</a>
+										<button type="button" class="btn">已收藏</button>
+									</div>
+								</div>
+								<!--无收藏-->
+								<div class="food-list-null text-center hidden">
+									<p>你还没有收藏任何美食哦~</p>
+								</div>
+								<!--游记-->
+								<!--有收藏-->
+								<div class="note-list hidden">
+									<div class="note-num">游记：<span>15篇</span></div>
+									<div class="note">
+										<p>
+											<a href="javascript:;" class="note-title" title="">游记标题游记标题游记标题游记标题游记标题游记标题游记标题游记标题</a>
+										</p>
+										<button type="button" class="btn">已收藏</button>
+									</div>
+								</div>
+								<!--无收藏-->
+								<div class="note-list-null text-center hidden">
+									<p>你还没有收藏任何游记哦~</p>
+								</div>
+							</div>
+							<!--我的提问-->
+							<div class="my-question hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>我的提问（共<span class="question-num">3个</span>）</li>
+								</ol>
+								<div class="question-list hidden">
+									<div class="question">
+										<h4 class="question-title">
+											<i class="iconfont icon-location"></i>
+											<span class="site">拉萨</span>
+											<a href="question_answer_detail.html">八月旅行国内去哪儿好？</a>
+										</h4>
+										<div class="question-detail">
+											预计8月6日至9日，共计4天，从北京出发。想咨询各位国内去哪儿玩儿比较好～我这儿在思考青岛和威海，有什么推荐吗？
+										</div>
+										<div class="tags">
+											<span class="label label-default tag">季节</span>
+											<span class="label label-default tag">行程安排</span>
+										</div>
+										<div class="other">
+											<div>浏览量(<span class="view">1231</span>)</div>
+											<div>
+												<a href="question_care.html">关注数(<span class="care">15</span>)</a>
+											</div>
+											<div>共有回答(<span class="num">13</span>)</div>
+											<div>提问于<span class="ask-time">2019-11-1 11:20</span></div>
+											<div class="delete">
+												<a href="javascript:;">删除该提问</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="question-list-null text-center hidden">
+									<p>你还没有任何提问哦~</p>
+								</div>
+							</div>
+							<!--我的回答-->
+							<div class="my-answer hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>我的回答（共<span class="answer-num">3个</span>）</li>
+								</ol>
+								<div class="answer-list hidden">
+									<div class="answer">
+										<div class="answer-header">你在<span class="answer-time">2018-10-13 05:56:31</span>，回答了
+											<a href="question.html">问题</a>：
+											<h4 class="question-title">
+												<a href="question_answer_detail.html">“<span>八月旅行国内去哪儿好？</span>”</a>
+											</h4>
+										</div>
+										<div class="answer-detail">
+											<div>以下是你的回答：</div>
+											<div class="answer-content">
+												四天时间去远处旅行时间太紧张了，青岛威海就是看大海，而且海水浑浊，如果特别喜欢大海可以去。如果自驾游建议去塞罕坝国家森林公园，乌兰布统大草原，第一天早上从北京出发约二个小时到达河北承德在避暑山庄边酒店住下，午餐后游避暑山庄。第二天早上出发一个多小时到达塞罕坝国家森林公园游玩，下午开一个小时到达乌兰布统大草原住宿，第三天游玩大草原骑马品尝当地美食，第四天返回北京。这条线路是我自驾游走过的。夏季草原景色非常美尤其是八月初景色更美。
+											</div>
+											<a href="answer_like.html">点赞的人(<span class="support">100</span>)</a>
+											<div class="delete">
+												<a href="javascript:;">删除该回答</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="answer-list-null text-center hidden">
+									<p>你还没有回答任何问题哦~</p>
+								</div>
+							</div>
+							<!--关注的问题-->
+							<div class="care-question hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>关注的问题（共<span class="care-question-num">3个</span>）</li>
+								</ol>
+								<!--有关注的问题-->
+								<div class="care-question-list hidden">
+									<div class="question">
+										<p>
+											问题：
+											<a href="question_answer_detail.html" title="">“<span>八月旅行国内去哪儿好？</span>”</a>
+										</p>
+										<button type="button" class="btn">已关注</button>
+									</div>
+									<div class="question">
+										<p>
+											问题：
+											<a href="question_answer_detail.html" class="question-title" title="">“<span>你第一次买奢侈品是怎样的体验？入手的是什么？现在看来值得买吗？</span>”</a>
+										</p>
+										<button type="button" class="btn">已关注</button>
+									</div>
+								</div>
+								<!--没有关注的问题-->
+								<div class="care-question-list-null text-center hidden">
+									<p>你还没有关注任何问题哦~</p>
+								</div>
+							</div>
+							<!--点赞的游记-->
+							<div class="my-like hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>点赞的游记（共<span class="like-num">3篇</span>）</li>
+								</ol>
+								<!--有点赞-->
+								<div class="like-list hidden">
+									<div class="like">
+										<p>
+											<a href="javascript:;" class="note-title" title="">游记标题游记标题游记标题游记标题游记标题游记标题游记标题游记标题</a>
+										</p>
+										<button type="button" class="btn">已点赞</button>
+									</div>
+								</div>
+								<!--无收藏-->
+								<div class="like-list-null text-center hidden">
+									<p>你还没有点赞过任何游记哦~</p>
+								</div>
+							</div>
+							<!--消息-->
+							<div class="message-list hidden">
+								<ol class="breadcrumb">
+									<li>当前位置</li>
+									<li>消息</li>
+								</ol>
+								<ul class="message-nav clearfix">
+									<li class="system my-active" id="system">系统消息</li>
+									<li class="like" id="like">收到的赞</li>
+									<li class="replay" id="replay">收到的回复</li>
+								</ul>
+								<!--有系统消息-->
+								<div class="system-list hidden">
+									<div class="message-status text-right">
+										<a href="javascript:;" class="read">全部标记为已读</a>
+										<a href="javascript:;" class="clear">清空所有消息</a>
+									</div>
+									<div class="system">
+										<div class="clearfix">
+											<div class="new"></div>
+											<div class="time">2019-10-2 15:18</div>
+										</div>
+										<div class="system-header">我们已经收到您对<span class="type">景点</span>：
+											<span class="error-name">"杭州西湖风景名胜区"</span>的纠错反馈。 经验证核实，信息确实有误，现为您反馈最新结果，感谢您的支持。
+											<a href="scenery_detail.html">点此查看</a>
+										</div>
+										<p>以下为您的反馈信息：</p>
+										<div class="system-content">
+											<p>错误类型：<span class="error-type">景点简介</span></p>
+											<p>错误内容：<span class="error-content">1111111111</span></p>
+										</div>
+									</div>
+									<div class="system">
+										<div class="clearfix">
+											<div class="new"></div>
+											<div class="time">2019-10-2 15:18</div>
+										</div>
+										<div class="system-header">我们已经收到您对<span class="type">景点</span>：
+											<span class="error-name">"杭州西湖风景名胜区"</span>的纠错反馈。 经验证核实，信息确实有误，现为您反馈最新结果，感谢您的支持。
+											<a href="scenery_detail.html">点此查看</a>
+										</div>
+										<p>以下为您的反馈信息：</p>
+										<div class="system-content">
+											<p>错误类型：<span class="error-type">景点简介</span></p>
+											<p>错误内容：<span class="error-content">1111111111</span></p>
+										</div>
+									</div>
+								</div>
+								<!--没有系统消息-->
+								<div class="system-list-null text-center hidden">
+									<p>系统消息空空如也~</p>
+								</div>
+								<!--有收到的赞-->
+								<div class="like-list hidden">
+									<div class="message-status text-right">
+										<a href="javascript:;" class="read">全部标记为已读</a>
+										<a href="javascript:;" class="clear">清空所有消息</a>
+									</div>
+									<!--两个样式-->
+									<!--点赞的是回答-->
+									<div class="like">
+										<div class="clearfix">
+											<div class="new"></div>
+											<div class="time">2019-10-2 15:18</div>
+										</div>
+										<div class="like-content-answer">
+											<a href="javascript:;">@<span class="like-user">用户A</span></a>点赞了你对问题“<span class="question-title">八月旅行国内去哪儿好？</span>” 的
+											<span class="type">回答</span> “
+											<p class="answer"><span>回答的内容回答的内容回答的内容回答的内容回答的内容回答的内容回答的内容回答的内容回答的内容回答的内容</span></p>”
+										</div>
+									</div>
+									<!--点赞的是游记-->
+									<div class="like">
+										<div class="clearfix">
+											<div class="new"></div>
+											<div class="time">2019-10-2 15:18</div>
+										</div>
+										<div class="like-content-note">
+											<a href="javascript:;">@<span>用户A</span></a>点赞了你的<span class="type">游记</span> “
+											<span class="note-title">香港|山海之间的钢铁森林(详细攻略+美食推荐)</span>”
+										</div>
+									</div>
+								</div>
+								<!--没有收到的赞-->
+								<div class="like-list-null text-center hidden">
+									<p>还没有收到赞哦~</p>
+								</div>
+								<!--有收到回复-->
+								<div class="replay-list hidden">
+									<div class="message-status text-right">
+										<a href="javascript:;" class="read">全部标记为已读</a>
+										<a href="javascript:;" class="clear">清空所有消息</a>
+									</div>
+									<div class="replay">
+										<div class="clearfix">
+											<div class="new"></div>
+											<div class="time">2019-10-2 15:18</div>
+										</div>
+										<!--这里跳转到游记的评论部分，根据回复的编号定位到回复的位置-->
+										<div class="replay-content">
+											<p class="my-commont">你的评论：“<span>当前用户的评论</span>”</p>
+											<a href="javascript:;">@<span>用户A</span></a>回复了你：<span class="type">“用户的回复用户的回复”</span>
+										</div>
+									</div>
+								</div>
+								<!--没有收到回复-->
+								<div class="replay-list-null text-center hidden">
+									<p>还没有收到回复哦~</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框1-->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">更换头像</h4>
+					</div>
+					<div class="modal-body">
+						<form enctype="multipart/form-data">
+						<div id="choice-img"><input type="file" class="img-input" />
+							<i class="iconfont icon-jiahao"></i>
+						</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn" id="change-img">确定修改</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框2-->
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">修改资料</h4>
+					</div>
+					<div class="modal-body">
+						<!--警告框-->
+						<div class="alert alert-warning hidden">
+							警告：昵称不能为空！
+						</div>
+						<div class="alert alert-success hidden" role="alert">
+							修改资料成功！
+						</div>
+						<form class="form-horizontal" autocomplete="off" id="update-form">
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>昵称：</label>
+									<input type="text" class="form-control" id="user-name" name="userName" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>性别：</label>
+									<div class="radio-inline">
+										<label><input type="radio" name="sex" value="1">男</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio"  name="sex" value="0">女</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>个人简介：</label>
+									<textarea class="form-control" rows="4" id="intro" name="intro"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn" id="change-info">确定修改</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框3 删除确认-->
+		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">删除提示</h4>
+					</div>
+					<div class="modal-body">
+						确定要删除吗？
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn" id="delete" data-dismiss="modal">确定删除</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/toastr.min.js" ></script>
+		<script type="text/javascript" src="js/person_space.js"></script>
+		</body>
+</html>

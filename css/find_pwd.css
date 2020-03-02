@@ -1,0 +1,126 @@
+body {
+	background: url(../img/background3.png) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #CCC;
+	color: #fff;
+}
+
+#find {
+	left: 50%;
+	top: 50%;
+	padding: 20px 40px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+
+/*需要验证的表单样式*/
+
+.form-control {
+	background: none;
+	display: block;
+	border: 2px solid #68838B;
+	color: #fff;
+	border-radius: 5px;
+	/*去掉轮廓*/
+	outline: none;
+}
+
+.form-control:focus {
+	border-color: #FFFAFA;
+}
+
+
+/*按钮*/
+
+#find .my-btn {
+	background: none;
+	border: 1px solid #68838B;
+	padding: 5px;
+	width: 100%;
+	border-radius: 5px;
+	/*去掉轮廓*/
+	outline: none;
+	cursor: pointer;
+}
+
+#find .my-btn:hover {
+	border-color: #FFFAFA;
+}
+
+
+/*链接*/
+
+#signIn {
+	margin-bottom: 0;
+}
+
+a {
+	color: #8DB6CD;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #8B7B8B;
+}
+
+
+/*验证未通过时*/
+
+
+/*1.Glyphicons 字体图标*/
+
+.has-error .form-control-feedback {
+	color: #ce8483;
+}
+
+
+/*2.input框*/
+
+.has-error .form-control,
+.has-error .form-control:focus {
+	border-color: #ce8483;
+}
+
+
+/*验证通过时*/
+
+.has-success .form-control-feedback {
+	color: #B0C4DE;
+}
+
+.has-success .form-control,
+.has-success .form-control:focus {
+	border-color: #B0C4DE;
+}
+
+
+/*模态框*/
+
+#myModal {
+	color: #000;
+	font-size: 15px;
+}
+
+.modal-content {
+	background: #E8E8E8;
+}
+
+.modal-footer {
+	padding-top: 0px;
+	text-align: right;
+	border-top: none;
+}

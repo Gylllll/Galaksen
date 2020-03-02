@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-景点</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_atgij504lrr.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/scenery.css" />
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="scenery-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!--搜索框-->
+						<div class="search">
+							<form class="search-form">
+								<div class="form-group">
+									<div class="col-md-6">
+										<input type="text" class="form-control" id="search-input1" placeholder="输入你感兴趣的景点名称（关键字或全称）" />
+									</div>
+									<button type="button" class="btn btn-default" id="search-btn1"><i class="iconfont icon-sousuo"></i></button>
+								</div>
+								<div class="form-group">
+									<div class="col-md-6">
+										<input type="text" class="form-control" id="search-input2" placeholder="选择地区以筛选景点" />
+										<!--省市-->
+										<div class="province-city">
+											<dl class="province clearfix"><dt>国内</dt>
+												<dd>新疆</dd>
+												<dd>西藏</dd>
+												<dd>青海</dd>
+												<dd>甘肃</dd>
+												<dd>内蒙古</dd>
+												<dd>四川</dd>
+												<dd>云南</dd>
+												<dd>贵州</dd>
+												<dd>宁夏</dd>
+												<dd>广西</dd>
+												<dd>陕西</dd>
+												<dd>湖北</dd>
+												<dd>海南</dd>
+												<dd>湖南</dd>
+												<dd>广东</dd>
+												<dd>山西</dd>
+												<dd>河南</dd>
+												<dd>河北</dd>
+												<dd>澳门</dd>
+												<dd>江西</dd>
+												<dd>香港</dd>
+												<dd>山东</dd>
+												<dd>北京</dd>
+												<dd>福建</dd>
+												<dd>江苏</dd>
+												<dd>天津</dd>
+												<dd>浙江</dd>
+												<dd>辽宁</dd>
+												<dd>上海</dd>
+												<dd>黑龙江</dd>
+												<dd>吉林</dd>
+												<dd>台湾 </dd>
+											</dl>
+											<dl class="city clearfix"><dt><span>国内</span>>><span class="current-province">西藏</span></dt>
+												<dd>拉萨</dd>
+												<dd>林芝</dd>
+												<dd>阿里</dd>
+												<dd>日喀则</dd>
+												<dd>山南</dd>
+												<dd>那曲</dd>
+												<dd>昌都</dd>
+											</dl>
+										</div>
+									</div>
+									<button type="button" class="btn btn-default" id="search-btn2"><i class="iconfont icon-sousuo"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--分割线-->
+				<hr/>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="scenery-nav"><a href="scenery.html">全部景点>></a>&nbsp;当前（按评分高到低）：[&nbsp;<span class="site">全部</span>&nbsp;]</div>
+						<!--景点列表-->
+						<div class="scenery-list">
+							<div class="scenery-list-part">
+								<div class="row">
+									<!--景点-->
+									<div class="col-md-4 scenerys">
+										<div class="thumbnail scenery-detail">
+											<a href="scenery_detail.html">
+												<div class="scenery-name">杭州西湖风景名胜区</div>
+											</a>
+											<a href="scenery_detail.html"><img class="scenery-img" src="img/scenery/4.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="scenery_detail.html">
+													<p class="scenery-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 scenerys">
+										<div class="thumbnail scenery-detail">
+											<a href="#">
+												<div class="scenery-name">杭州西湖风景名胜区</div>
+											</a>
+											<a href="#"><img class="scenery-img" src="img/scenery/4.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="scenery-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 scenerys">
+										<div class="thumbnail scenery-detail">
+											<a href="#">
+												<div class="scenery-name">杭州西湖风景名胜区</div>
+											</a>
+											<a href="#"><img class="scenery-img" src="img/scenery/4.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="scenery-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<!--景点-->
+									<div class="col-md-4 scenerys">
+										<div class="thumbnail scenery-detail">
+											<a href="#">
+												<div class="scenery-name">杭州西湖风景名胜区</div>
+											</a>
+											<a href="#"><img class="scenery-img" src="img/scenery/4.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="scenery-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 scenerys">
+										<div class="thumbnail scenery-detail">
+											<a href="#">
+												<div class="scenery-name">杭州西湖风景名胜区</div>
+											</a>
+											<a href="#"><img class="scenery-img" src="img/scenery/4.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="scenery-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 scenerys">
+										<div class="thumbnail scenery-detail">
+											<a href="#">
+												<div class="scenery-name">杭州西湖风景名胜区</div>
+											</a>
+											<a href="#"><img class="scenery-img" src="img/scenery/4.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="scenery-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--更多-->
+						<div class="more text-center">点击加载更多<i class="iconfont icon-double-arrow-down"></i></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/scenery.js"></script>
+	</body>
+
+</html>

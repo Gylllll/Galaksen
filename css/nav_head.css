@@ -1,0 +1,164 @@
+/*导航*/
+
+
+/*body{
+	padding-top: 55px; 
+}*/
+
+i[class*="iconfont"] {
+	font-size: 26px;
+	color: #8B636C;
+}
+
+.my-nav {
+	background: #BCD2EE;
+	border: 0;
+}
+
+.my-nav a {
+	color: #1C1C1C;
+}
+
+.my-nav a:hover {
+	color: #8B636C;
+}
+
+.nav-container .nav-left>li:hover {
+	color: #8B636C;
+	border-bottom: 3px solid #8B636C;
+}
+
+.nav-container .nav-left>li:first-child:hover {
+	border-bottom: none;
+}
+
+.nav-container .nav-left>li {
+	float: left;
+	height: 55px;
+	padding: 0 16px;
+}
+
+.nav-container .nav-left li.nav-name {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.nav-container .nav-left .nav-name>a {
+	font-size: 20px;
+	font-weight: 600;
+	color: #8B636C;
+}
+
+.nav-container .nav-left .my-active {
+	background: #A2B5CD;
+}
+
+.nav-container .nav-left a {
+	line-height: 55px;
+	display: inline-block;
+}
+
+
+/*导航右*/
+
+.nav-container .nav-right>li {
+	float: left;
+	height: 55px;
+	margin: 0 7px;
+	line-height: 55px;
+}
+
+.nav-container .nav-right>li>a {
+	display: inline-block;
+}
+
+
+/*登录前 导航右*/
+
+.nav-container .login-before i:hover {
+	color: #4F4F4F;
+}
+
+
+/*登录后 导航右*/
+
+.nav-container .login-after>li {
+	float: right;
+}
+.nav-container .login-after .user,
+.nav-container .login-after .message {
+	position: relative;
+	padding: 0;
+}
+.nav-container .login-after .user>a:first-child,
+.nav-container .login-after .message>a:first-child {
+	border-top: 3px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	padding: 0 5px;
+	line-height: 53px;
+}
+.nav-container .login-after .user:hover>a:first-child,
+.nav-container .login-after .message:hover>a:first-child {
+	border-top: 3px solid #8B7B8B;
+	border-left: 1px solid #9FB6CD;
+	border-right: 1px solid #9FB6CD;
+}
+.nav-container .login-after .user .user-menu,
+.nav-container .login-after .message .message-menu{
+	display: none;
+	position: absolute;
+	background: #BCD2EE;
+	z-index: 99;
+	width: 200%;
+	right: 0;
+	top: 55px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.nav-container .login-after .user:hover .user-menu,
+.nav-container .login-after .message:hover .message-menu{
+	display: block;
+	border-left: 1px solid #9FB6CD;
+	border-right: 1px solid #9FB6CD;
+	border-bottom: 1px solid #9FB6CD;
+}
+.nav-container .login-after .message .message-menu li {
+	width: 100%;
+	padding: 7px 20px;
+}
+
+.nav-container .login-after .message .message-menu li>a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+.nav-container .login-after .user .user-menu li:hover,
+.nav-container .login-after .message .message-menu li:hover {
+	background: #A2B5CD;
+}
+
+
+.nav-container .login-after i {
+	font-size: 20px;
+}
+
+.nav-container .login-after img {
+	border: 2px solid transparent;
+	width: 40px;
+	height: 40px;
+}
+
+.nav-container .login-after .user .user-img:hover img {
+	border: 2px solid #8B7B8B;
+}
+
+.nav-container .login-after .user .user-img:hover {
+	color: #8B7B8B;
+}
+
+.nav-container .login-after .user .user-menu{
+	width: 250%;
+	left: 0;
+}

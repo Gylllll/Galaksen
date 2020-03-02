@@ -1,0 +1,383 @@
+body {
+	font-size: 16px;
+	background: url(../img/background4.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/*返回顶部*/
+
+.top {
+	position: fixed;
+	top: 80%;
+	right: 20px;
+}
+
+#top-btn {
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+
+#top-btn:hover {
+	background: rgba(238, 169, 184, 1);
+}
+
+
+/*user-container*/
+
+.user-container {
+	margin: 20px 0;
+}
+
+.user-container .container {
+	padding: 20px 0;
+	background: rgba(255, 255, 255, .7);
+	border-radius: 7px;
+}
+
+
+/*左边 user-header */
+
+.user-left .user-header>div {
+	margin: 10px 0;
+}
+
+.user-header .user-img {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #696969;
+}
+
+.user-header .user-name i {
+	font-size: 16px;
+}
+
+.user-intro>div {
+	width: 80%;
+	margin: auto;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+.user-header .num>a {
+	color: #363636;
+	margin: 0 7px;
+}
+
+.user-header .num>a:hover {
+	color: #8B668B;
+	text-decoration: underline;
+}
+
+#care-btn {
+	width: 50%;
+	outline: none;
+	background: #9C9C9C;
+}
+
+#care-btn.care {
+	background: #EEB4B4;
+}
+
+hr {
+	border-top: 1px solid #363636;
+	width: 80%;
+}
+
+
+/*左边 aside-nav*/
+
+.aside-nav span {
+	color: #363636;
+	display: inline-block;
+	height: 60px;
+	line-height: 40px;
+	width: 80%;
+	padding: 10px 0;
+	background: rgba(162, 181, 205, .5);
+	border-right: 5px solid transparent;
+}
+
+.aside-nav span.nav-active,
+.aside-nav span:hover {
+	background: #A2B5CD;
+	color: #8B636C;
+	border-right: 5px solid #8B636C;
+}
+
+
+/*右边*/
+
+.user-right .show-area>div {
+	width: 95%;
+	background: rgba(162, 181, 205, .5);
+	padding: 20px;
+}
+
+.user-right .show-area .breadcrumb {
+	background: transparent;
+	margin-bottom: 0;
+}
+
+.breadcrumb>li+li:before,
+.breadcrumb>li {
+	color: #696969;
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+
+/*粉丝和关注的人*/
+
+.user-right .show-area .fans-list .fans,
+.user-right .show-area .care-list .care {
+	width: 30%;
+	float: left;
+	padding: 10px 30px;
+}
+
+.fans-list .fans .fans-img,
+.care-list .care .care-img {
+	width: 50px;
+	height: 50px;
+}
+
+.fans-list .fans a,
+.care-list .care a {
+	display: inline-block;
+	margin-right: 7px;
+	color: #363636;
+}
+
+
+/*没有粉丝、没有关注的人*/
+
+.user-right .show-area div.fans-list-null,
+.user-right .show-area div.care-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*TA的游记*/
+
+.user-travel .sent-list .note-num {
+	padding: 15px;
+	padding-bottom: 0;
+}
+
+.user-travel .sent-list .travel-note {
+	border-bottom: 1px solid #333333;
+	padding: 15px;
+}
+
+.user-travel .sent-list .travel-note .note-info {
+	font-size: 15px;
+}
+
+.user-travel .sent-list .travel-note .note-info i {
+	font-size: 16px;
+	margin-right: 3px;
+}
+
+.user-travel .sent-list .travel-note .note-info>div {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+
+/*没有发表游记*/
+
+.user-travel .sent-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*TA的点评*/
+
+.user-right .user-comment .comment-list .comment-content {
+	border-bottom: 1px solid #333333;
+	padding: 15px;
+}
+
+.comment-content .comment-header>a {
+	font-weight: 550;
+	color: #8B668B;
+}
+
+.comment-content .comment>div {
+	float: left;
+	height: 45px;
+	line-height: 45px;
+}
+
+.comment-content .comment .avg-score {
+	margin-left: 5px;
+	font-weight: normal;
+}
+
+.comment-content .comment .star {
+	position: relative;
+}
+
+.comment-content .comment .star .bottom-star li,
+.comment-content .comment .star .top-star .top-inner li {
+	float: left;
+}
+
+.comment-content .comment .star .bottom-star li>i {
+	color: #999;
+	font-size: 16px;
+}
+
+.comment-content .comment .star .top-star .top-inner li>i {
+	color: #ffa800;
+	font-size: 16px;
+}
+
+.comment-content .comment .star .top-star {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 80%;
+}
+
+.comment-content .comment .star .top-star .top-inner {
+	width: 1000%;
+}
+
+
+/*点评的内容及图片*/
+
+.comment-content .comment-editor,
+.comment-content .comment-imgs {
+	margin-bottom: 10px;
+}
+
+.comment-content .comment-editor {
+	line-height: 1.5em;
+}
+
+.comment-content .comment-imgs a {
+	display: inline-block;
+	margin: 7px 3px;
+}
+
+.comment-content .comment-imgs a img {
+	width: 200px;
+	height: 140px;
+}
+
+
+/*没有点评*/
+
+.user-right .user-comment .comment-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*TA的提问*/
+
+.user-right .user-question .question-list .question {
+	border-bottom: 1px solid #333333;
+	padding: 15px;
+}
+
+.question .question-title a {
+	color: #000;
+	font-weight: 550;
+}
+
+.question .question-title a:hover {
+	color: #8B636C;
+}
+
+.question .question-title i {
+	font-size: 16px;
+}
+
+.question .question-title .site {
+	margin-right: 10px;
+	color: #8B636C;
+}
+
+.question .tags {
+	margin: 10px 0;
+}
+
+.question .other div {
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.user-right .user-question .question-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}
+
+
+/*TA的回答*/
+
+.user-right .user-answer .answer-list .answer {
+	border-bottom: 1px solid #333333;
+	padding: 15px;
+}
+
+.answer .answer-header {
+	padding-bottom: 10px;
+}
+
+.answer .answer-header a {
+	color: #8B668B;
+	font-weight: 550;
+}
+
+.answer .answer-header a:hover {
+	text-decoration: underline;
+}
+
+.answer .answer-detail .answer-content {
+	padding: 10px 0;
+	line-height: 1.7em;
+}
+
+.answer .answer-detail div:last-child {
+	font-size: 14px;
+}
+
+
+/*没有回答*/
+
+.user-right .user-answer .answer-list-null {
+	padding: 100px 0;
+	font-size: 18px;
+	color: #696969;
+}

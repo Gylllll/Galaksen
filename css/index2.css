@@ -1,0 +1,425 @@
+body {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+}
+
+/*返回顶部*/
+.top{
+	position: fixed;
+	top:80%;
+	right: 20px;
+}
+#top-btn{
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+#top-btn:hover{
+ background: rgba(238,169,184,.5);
+}
+
+/*轮播*/
+
+/*banner*/
+
+.banner {
+	width: 100%;
+}
+
+
+/*banner slider*/
+
+.banner .slider {
+	width: 100%;
+	height: 450px;
+}
+
+.banner .slider a[class*="swiper"] {
+	display: block;
+	width: 100%;
+	height: 450px;
+}
+
+/*文字部分*/
+
+.banner .swiper-slide {
+	position: relative;
+}
+
+.banner .slider .show-title {
+	position: absolute;
+	top: 30px;
+	left: 25%;
+	color: white;
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, .9);
+}
+
+.banner .slider .show-title .date {
+	display: block;
+	font-size: 22px;
+}
+
+
+/*分页器*/
+
+.banner .pagination {
+	position: relative;
+	width: 1200px;
+	height: 450px;
+	top: -450px;
+	margin: 0 auto;
+}
+
+.banner .pagination .pagination-container {
+	position: absolute;
+	width: 110px;
+	height: 420px;
+	top: 15px;
+	left: 100px;
+	z-index: 999;
+}
+
+.banner .pagination .pagination-container .swiper-pagination .swiper-pagination-bullet {
+	display: block;
+	width: 110px;
+	height: 60px;
+	margin-bottom: 10px;
+	border-radius: 0;
+	background: none;
+	opacity: 0.8;
+}
+
+.banner .pagination .pagination-container .swiper-pagination .swiper-pagination-bullet>img {
+	width: 100%;
+	height: 100%;
+}
+
+.banner .pagination .pagination-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	border: 3px solid #1C1C1C;
+	opacity: 1;
+}
+
+.banner .swiper-button-next {
+	right: 50px;
+}
+
+
+/*主体内容*/
+.main-container {
+	background: #BCD2EE;
+	padding: 20px;
+}
+
+.main-container a {
+	color: black;
+}
+/*侧边*/
+.main-aside .thumbnail {
+	background: #EEE9E9;
+}
+.main-container .main-aside .aside-head {
+	box-sizing: border-box;
+	padding: 5px 10px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.main-container .main-aside .aside-head>h4 {
+	display: inline-block;
+}
+
+.main-container .main-aside .aside-head>a {
+	display: inline-block;
+	float: right;
+	line-height: 50px;
+	font-size: 14px;
+	color: #696969;
+}
+.main-container .main-aside i{
+	font-size: 20px;
+}
+.main-aside a:hover,.main-container .main-aside .aside-head>a:hover{
+	color:#8B658B;
+}
+/*专栏文章*/
+.main-container .main-aside .caption .article-title{
+	display: inline-block;
+	font-size: 16px;
+}
+
+.main-container .main-aside .caption .article-content{
+	font-size: 15px;
+	margin-top: 10px;
+	line-height:1.5;
+	/*多行隐藏*/
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;/*从第三行开始隐藏*/
+	/*用省略号"…"隐藏超出范围的文本 */
+}
+/*美食*/
+.main-container .main-aside .caption .food-detail{
+	position:relative;
+}
+.main-container .main-aside .caption .food-detail a:nth-child(2){
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.main-container .main-aside .caption .food-detail a:nth-child(2)>i{
+	font-size: 14px;
+}
+.main-container .main-aside .caption .food-name{
+   padding-left: 5px;
+   line-height: 20px;
+}
+.main-container .main-aside .caption .food-location{
+  padding-left: 5px;
+   font-size:14px;
+}
+.main-container .main-aside .caption .food-intro{
+	font-size: 15px;
+	margin-top: 10px;
+	line-height:1.5;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:2;
+}
+/*景点*/
+.main-container .main-aside .caption .scenery-detail{
+	position:relative;
+}
+.main-container .main-aside .caption .scenery-detail a:nth-child(2){
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.main-container .main-aside .caption .scenery-detail a:nth-child(2)>i{
+	font-size: 14px;
+}
+.main-container .main-aside .caption .scenery-name{
+   padding-left: 5px;
+   line-height: 20px;
+}
+.main-container .main-aside .caption .scenery-location{
+  padding-left: 5px;
+   font-size:14px;
+}
+.main-container .main-aside .caption .scenery-intro{
+	font-size: 15px;
+	margin-top: 10px;
+	line-height:1.5;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:2;
+}
+
+/*轮播、分页器*/
+.main-aside #swiper2,
+.main-aside #swiper3,
+.main-aside #swiper4 {
+	width: 100%;
+}
+
+.main-aside #swiper2 .swiper-pagination2 {
+	text-align: left;
+	bottom: 0;
+}
+
+.main-aside #swiper3 .swiper-pagination3 {
+	bottom: 0;
+}
+
+.main-aside #swiper4 .swiper-pagination4 {
+	text-align: right;
+	bottom: 0;
+}
+
+.main-aside #swiper2 .swiper-pagination2 .swiper-pagination-bullet,
+.main-aside #swiper4 .swiper-pagination4 .swiper-pagination-bullet {
+	width: 15px;
+	height: 7px;
+	border-radius: 0;
+	background: #EEE9E9;
+	opacity: 0.8;
+}
+
+.main-aside #swiper3 .swiper-pagination3 .swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #EEE9E9;
+	opacity: 0.8;
+}
+
+.main-aside #swiper2 .swiper-pagination2 .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.main-aside #swiper3 .swiper-pagination3 .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.main-aside #swiper4 .swiper-pagination4 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #363636;
+	opacity: 1;
+}
+/*右边（游记部分）*/
+/*导航*/
+.main-travelnotes .travel-nav .col-md-8{
+	border-radius: 10px;
+}
+.main-travelnotes .travel-nav-left li{
+	position: relative;
+	float:left;
+	height: 40px;
+	margin-right: 40px;
+}
+.main-travelnotes .travel-nav-left li a{
+	font-size: 18px;
+}
+.main-travelnotes .travel-nav-left li.hot a{
+	color:#8B636C;
+}
+/*筛选按钮*/
+.main-travelnotes .btn-sx{
+	display:inline-block;
+	height: 25px;
+	background-color:#999999;
+    border-color: transparent;
+    border-radius:5px;
+    padding:0 5px;
+    font-size:16px;
+    outline: none;
+}
+/*写游记按钮*/
+.main-travelnotes .travel-nav-right{
+	display:block;
+	width: 50%;
+	height: 40px;
+	float: right;
+	background-color:#EEA9B8;
+    border-color: transparent;
+    border-radius: 10px;
+    padding:0;
+    font-size:16px;
+    outline: none;
+}
+.main-travelnotes .travel-nav-right>span{
+	display: inline-block;
+	vertical-align:text-bottom;
+}
+.main-travelnotes .travel-nav-right:hover,.main-travelnotes .btn-sx:hover{
+	background-color:#EEA9B8;   
+	outline: none;
+}
+/*热门下的小三角*/
+.main-travelnotes .travel-nav-left li.current::after{
+	content: "";
+	display: block;
+	position: absolute;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 7px solid #EEE9E9;
+	width: 2px;
+	bottom: 0;
+	left: 20%;
+}
+/*最新发布下的小三角*/
+.main-travelnotes .travel-nav-left li.new.current::after{
+	left: 30%;
+}
+/*右边主体内容*/
+.main-travelnotes .travel-note{
+	background:transparent;
+}
+.main-travelnotes .travel-note .thumbnail{
+	background:#EEE9E9;
+	width:100%;
+}
+.main-travelnotes .travel-note .note-left a,.main-travelnotes .travel-note .note-right .note-detail{
+	padding: 7px;
+}
+.main-travelnotes .travel-note .note-left>a{
+	display: block;
+	width: 100%;
+	height:160px;
+}
+.main-travelnotes .travel-note .note-left>a>img{
+	width: 100%;
+	height: 100%;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-title{
+	display: block;
+	margin-bottom: 7px;
+	font-size: 18px;
+	font-weight: 550;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-title:hover{
+	color:#5D478B;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-content{
+	margin-bottom:20px;
+	font-size: 14px;
+	color: #666;
+	line-height:1.5;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-info{	
+	width: 100%;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-info>div{
+	margin-right: 10px;
+	display: inline-block;
+}
+.main-travelnotes .travel-note .note-right .note-detail{
+	color: #666;
+	font-size: 12px;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-info i{
+	font-size: 16px;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-info .note-user>img{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin: 0 5px;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-info .note-place>a{
+	color:#666;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-info .note-user>a{
+	color:#68228B;
+}
+.main-travelnotes .travel-note .note-right .note-detail .note-info .note-place>a:hover,
+.main-travelnotes .travel-note .note-right .note-detail .note-info .note-user>a:hover{
+	color:	#CD6090;
+}
+/*分页器*/
+.foot-pagination .pagination>.current-pag>a{
+	    background-color:#EEA9B8;
+}
+.foot-pagination .pagination{
+	float: right;
+}
+.foot-pagination .data-number{
+	float: right;
+	display: inline-block;
+    padding:10px;
+    margin: 20px 0;
+    vertical-align: bottom;
+}
+

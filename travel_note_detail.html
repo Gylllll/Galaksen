@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-游记-详情</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_yh4mjrx1ocs.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/toastr.min.css" />
+		<link rel="stylesheet" href="css/travel_note_detail.css" />
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="note-detail">
+			<div class="container">
+				<!--路径导航-->
+				<ol class="breadcrumb">
+					<li>
+						<a href="travel_note.html">游记</a>
+					</li>
+					<li class="active"><span class="note-title">香港|山海之间的钢铁森林(详细攻略+美食推荐)</span></li>
+				</ol>
+				<div class="row">
+					<!--游记正文-->
+					<div class="col-md-9 note-left">
+						<!--头部-->
+						<div class="note-header">
+							<div class="writer-info text-center">
+								<a href="#"><img src="img/background6.jpg" class="writer-img img-circle" /></a>
+								<a href="#" class="writer-name">用户名</a>
+							</div>
+							<div class="info-right">
+								<div class="note-info">
+									<div class="note-like" title="点此点赞">
+										<i class="iconfont icon-like"></i>
+										<span>点赞(<span class="like-num">123</span>)</span>
+									</div>
+									<div class="note-collect" title="点此收藏">
+										<i class="iconfont icon-xingxing"></i>
+										<span>收藏(<span class="note-num">3</span>)</span>
+									</div>
+									<div class="note-comment" title="点此跳转至评论">
+										<i class="iconfont icon-pinglun"></i>
+										<span>评论(<span class="comment-num">3</span>)</span>
+									</div>
+									<div class="note-view">
+										<i class="iconfont icon-liulan"></i>
+										<span>浏览量(<span class="view-num">131</span>)</span>
+									</div>
+								</div>
+								<div class="other-info">
+									<i class="iconfont icon-location"></i><span class="site">香港</span>
+									<div class="tags">
+										<span class="label label-default tag">景点</span>
+										<span class="label label-default tag">美食</span>
+									</div>
+								</div>
+								<div class="note-time">发表于：<span>2019-12-14 23:24</span></div>
+							</div>
+						</div>
+						<hr />
+						<!--标题-->
+						<div class="note-title">
+							<h2 class="note-title">香港|山海之间的钢铁森林(详细攻略+美食推荐)香港|山海之间的钢铁森林(详细攻略+美食推荐)</h2>
+						</div>
+						<!--内容-->
+						<div class="note-content">
+							<h3>写在前面</h3>
+							<p>为什么来 香港 旅行？我想大部分人是因为购物吧， 香港 的东西够便宜， 香港 很少有假货；剩下的会有相当多的是想去 香港 的迪士尼乐园和海洋公园这样的顶级游乐场；当然也会有专程为了美食前来的吃货们，毕竟 香港 也是美食的天堂。对了，还有不得不提的 香港 电影，那种属于上个世纪的胶片感你可以在 香港 找到，亦或是像金城武一样去便利店买一罐凤梨罐头，走着吃着会发现已走到春娇与志明抽烟的那个路口。 于我而言，以上都是我想去 香港 的理由，更关键的是，在我想出去走走的时候， 香港 恰如其分的就在那个地方。 于是在2019年的一月，我和小镜子来到了 香港 ....... 先看一波美图吧！ 暗红色的出租车和 香港 狭窄的街巷很搭</p>
+							<img src="img/note/Hongkong.jpeg" />
+							<p>百年的叮叮车依然在 香港 岛上来来往往</p>
+							<img src="img/note/Hongkong 2.jpeg" />
+							<p>在鰂鱼涌，这个超 高密 度的建筑群是变形金刚战斗过的地方</p>
+							<img src="img/note/Hongkong3.jpeg" />
+							<p>在鰂鱼涌，这个超 高密 度的建筑群是变形金刚战斗过的地方</p>
+						</div>
+						<hr />
+						<!--评论-->
+						<div class="comment-show">
+							<!--当前评论区-->
+							<div class="current-user">
+								<form class="form-horizontal" id="comment-form" autocomplete="off">
+									<div class="form-group">
+										<div class="col-md-2 text-right">
+											<img src="img/head1.jpg" class="current-img img-circle" />
+										</div>
+										<div class="col-md-8">
+											<textarea class="form-control" rows="4" id="comment-area" name="commentArea"></textarea>
+										</div>
+										<div class="col-md-2">
+											<button type="button" class="btn btn-default" id="publish-btn">发表评论</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!--提示-->
+							<div class="comment-nav">以下评论均来自Galaksen用户，按评论时间先后显示（共<span class="comment-number">3条</span>评论）</div>
+							<div class="comment-nav-null hidden">当前游记暂无评论，来发表你的评论吧~</div>
+							<!--评论列表-->
+							<div class="comment-list">
+								<!--评论-->
+								<div class="comment">
+									<div class="comment-header">
+										<a href="#"><img src="img/head1.jpg" class="comment-img img-circle" /></a>
+										<a href="#" class="comment-name">用户名A</a>
+										<span class="comment-time">2019-12-12 20:20</span>
+										<a href="javascript:;" class="delete">删除</a>
+										<a href="javascript:;" class="replay-show-hidden">收起回复</a>
+									</div>
+									<div class="comment-content">
+										11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+									</div>
+									<div class="replay-show1">
+										<div class="replay-tip">回复@<span class="replay-for">用户名A</span></div>
+										<textarea rows="2" class="replay-area"></textarea>
+										<button class="btn btn-default replay-btn1">发表回复</button>
+									</div>
+									<!--回复-->
+									<div class="replay-list">
+										<div class="comment-replay">
+											<div class="replay-container">
+												<a href="#"><img src="img/3.jpg" class="replay-img img-circle" /></a>
+												<a href="#" class="replay-name">用户名B</a>
+												回复了
+												<span class="replay-for">用户名A</span>：
+												<div class="replay-content">
+													222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+												</div>
+												<div>
+													<span class="replay-time">2019-12-12 20:20</span>
+													<a href="javascript:;" class="replay">回复</a>
+													<a href="javascript:;" class="delete">删除</a>
+												</div>
+											</div>
+											<!--回复区-->
+											<div class="replay-show2 hidden">
+												<div class="replay-tip">回复@<span class="replay-for">用户名A</span></div>
+												<textarea rows="2" class="replay-area"></textarea>
+												<button class="btn btn-default replay-btn2">发表回复</button>
+											</div>
+										</div>
+										<div class="comment-replay">
+											<div class="replay-container">
+												<a href="#"><img src="img/3.jpg" class="replay-img img-circle" /></a>
+												<a href="#" class="replay-name">用户名B</a>
+												回复了
+												<span class="replay-for">用户名A</span>：
+												<div class="replay-content">
+													222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+												</div>
+												<div>
+													<span class="replay-time">2019-12-12 20:20</span>
+													<a href="javascript:;" class="replay">回复</a>
+													<a href="javascript:;" class="delete hidden">删除</a>
+												</div>
+											</div>
+											<!--回复区-->
+											<div class="replay-show2 hidden">
+												<div class="replay-tip">回复@<span class="replay-for">用户名A</span></div>
+												<textarea rows="2" class="replay-area"></textarea>
+												<button class="btn btn-default replay-btn2">发表回复</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							    <div class="comment">
+									<div class="comment-header">
+										<a href="#"><img src="img/head1.jpg" class="comment-img img-circle" /></a>
+										<a href="#" class="comment-name">用户名A</a>
+										<span class="comment-time">2019-12-12 20:20</span>
+										<a href="javascript:;" class="delete">删除</a>
+										<a href="javascript:;" class="replay-show-hidden">收起回复</a>
+									</div>
+									<div class="comment-content">
+										11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+									</div>
+									<div class="replay-show1">
+										<div class="replay-tip">回复@<span class="replay-for">用户名A</span></div>
+										<textarea rows="2" class="replay-area"></textarea>
+										<button class="btn btn-default replay-btn1">发表回复</button>
+									</div>
+									<!--回复-->
+									<div class="replay-list">
+										<div class="comment-replay">
+											<div class="replay-container">
+												<a href="#"><img src="img/3.jpg" class="replay-img img-circle" /></a>
+												<a href="#" class="replay-name">用户名B</a>
+												回复了
+												<span class="replay-for">用户名A</span>：
+												<div class="replay-content">
+													222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+												</div>
+												<div>
+													<span class="replay-time">2019-12-12 20:20</span>
+													<a href="javascript:;" class="replay">回复</a>
+													<a href="javascript:;" class="delete">删除</a>
+												</div>
+											</div>
+											<!--回复区-->
+											<div class="replay-show2 hidden">
+												<div class="replay-tip">回复@<span class="replay-for">用户名A</span></div>
+												<textarea rows="2" class="replay-area"></textarea>
+												<button class="btn btn-default replay-btn2">发表回复</button>
+											</div>
+										</div>
+										<div class="comment-replay">
+											<div class="replay-container">
+												<a href="#"><img src="img/3.jpg" class="replay-img img-circle" /></a>
+												<a href="#" class="replay-name">用户名B</a>
+												回复了
+												<span class="replay-for">用户名A</span>：
+												<div class="replay-content">
+													222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+												</div>
+												<div>
+													<span class="replay-time">2019-12-12 20:20</span>
+													<a href="javascript:;" class="replay">回复</a>
+													<a href="javascript:;" class="delete">删除</a>
+												</div>
+											</div>
+											<!--回复区-->
+											<div class="replay-show2 hidden">
+												<div class="replay-tip">回复@<span class="replay-for">用户名A</span></div>
+												<textarea rows="2" class="replay-area"></textarea>
+												<button class="btn btn-default replay-btn2">发表回复</button>
+											</div>
+										</div>
+									<div class="comment-replay">
+											<div class="replay-container">
+												<a href="#"><img src="img/3.jpg" class="replay-img img-circle" /></a>
+												<a href="#" class="replay-name">用户名B</a>
+												回复了
+												<span class="replay-for">用户名A</span>：
+												<div class="replay-content">
+													222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+												</div>
+												<div>
+													<span class="replay-time">2019-12-12 20:20</span>
+													<a href="javascript:;" class="replay">回复</a>
+													<a href="javascript:;" class="delete">删除</a>
+												</div>
+											</div>
+											<!--回复区-->
+											<div class="replay-show2 hidden">
+												<div class="replay-tip">回复@<span class="replay-for">用户名A</span></div>
+												<textarea rows="2" class="replay-area"></textarea>
+												<button class="btn btn-default replay-btn2">发表回复</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--推荐-->
+					<div class="col-md-3 note-right">
+						<p>为你推荐：</p>
+						<a class="change" href="#">换一换？<i class="iconfont icon-shuaxin"></i></a>
+						<ul class="maybe">
+							<li>
+								<a href="#">港澳双城记，我的2019 | SoundWalk HongKong（年初）+</a>
+							</li>
+							<li>
+								<a href="#">香港七大人气景点（附经典行程）</a>
+							</li>
+							<li>
+								<a href="#">香港 | 7大风靡ins的网红拍照地</a>
+							</li>
+							<li>
+								<a href="#">深圳去香港怎么走？通关指南在这里</a>
+							</li>
+							<li>
+								<a href="#">盘点香港最热门的购物街！|香港购物|香港购物攻略</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框 删除确定-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">删除提示</h4>
+					</div>
+					<div class="modal-body">
+						确定要删除吗？
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn" id="delete" data-dismiss="modal">确定删除</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/toastr.min.js"></script>
+		<script type="text/javascript" src="js/travel_note_detail.js"></script>
+	</body>
+
+</html>

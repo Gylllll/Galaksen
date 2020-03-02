@@ -1,0 +1,162 @@
+/*@font-face {
+				font-family: myFirstFont;
+				src: url(''), 
+				url('');				
+				font-weight: bold;
+			}*/
+
+body {
+	background: url(../img/background5.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #CCC;
+	color: #fff;
+}
+
+#login {
+	left: 50%;
+	top: 50%;
+	padding: 20px 40px;
+	position: absolute;
+	/*居中*/
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+h2 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+/*需要验证的表单样式*/
+
+.form-control {
+	background: none;
+	display: block;
+	border: 2px solid #68838B;
+	color: #fff;
+	border-radius: 5px;
+	/*去掉轮廓*/
+	outline: none;
+}
+
+.form-control:focus {
+	border-color: #FFFAFA;
+}
+
+
+/*三个按钮的样式*/
+
+#login .my-btn {
+	background: none;
+	border: 1px solid #68838B;
+	padding: 5px;
+	width: 100%;
+	border-radius: 5px;
+	/*去掉轮廓*/
+	outline: none;
+	cursor: pointer;
+}
+
+/*悬停在按钮上的样式*/
+#login .my-btn:hover {
+	border-color: #FFFAFA;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+#status,
+#btn-group {
+	margin-bottom: 10px;
+}
+
+#forget {
+	margin-bottom: 0;
+}
+
+
+/*错误信息提示的位置*/
+
+.bv-form .help-block {
+	color: #ce8483;
+	margin-bottom: 0px;
+}
+
+.control-label {
+	font-size: 16px;
+}
+
+
+/*验证未通过时*/
+
+
+/*1.Glyphicons 字体图标*/
+
+.has-error .form-control-feedback {
+	color: #ce8483;
+}
+
+
+/*2.lable*/
+
+.has-error .control-label {
+	color: #fff;
+}
+
+
+/*3.input框*/
+
+.has-error .form-control,
+.has-error .form-control:focus {
+	border-color: #ce8483;
+}
+
+
+/*验证通过时*/
+
+.has-success .form-control-feedback {
+	color: #B0C4DE;
+}
+
+.has-success .control-label {
+	color: #fff;
+}
+
+.has-success .form-control,
+.has-success .form-control:focus {
+	border-color: #B0C4DE;
+}
+
+a {
+	color: #8DB6CD;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #8B7B8B;
+}
+
+#remember {
+	vertical-align: top;
+}
+
+/*模态框*/
+#myModal {
+	color: #000;
+	font-size: 15px;
+}
+
+.modal-content {
+	background: #E8E8E8;
+}
+
+.modal-footer {
+	padding-top: 0px;
+	text-align: right;
+	border-top: none;
+}

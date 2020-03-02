@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-美食-美食详情</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_otx24fqr1x.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/food_detail.css" />
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="food_detail">
+			<div class="container">
+				<ol class="breadcrumb path-nav">
+					<li>
+						<a href="food.html">美食</a>
+					</li>
+					<li class="active">当前：<span class="food-name">西湖醋鱼</span></li>
+				</ol>
+				<!--简介、发表点评-->
+				<div class="row">
+					<div class="col-md-8 detail_left">
+						<!--标题-->
+						<h3><span class="food-name">西湖醋鱼</span><small>/<span class="site">浙江杭州</span></small></h3>
+						<div class="h3-sub">
+							<div class="h3-sub-1" title="添加收藏"><i class="iconfont icon-shoucang"></i><span class="shoucang">收藏</span></div>
+							<div class="h3-sub-2" title="点我纠错"><i class="iconfont icon-jiucuo"></i><span class="jiucuo">纠错</span></div>
+						</div>
+						<!--副导航-->
+						<nav class="sub-nav">
+							<ul class="clearfix">
+								<li class="current">
+									<a href="#">介绍</a>
+								</li>
+								<li>
+									<a href="#" class="num">点评（共<span>12条</span>）</a>
+								</li>
+							</ul>
+						</nav>
+						<!--图片轮播-->
+						<div class="swiper-container" id="swiper">
+							<div class="swiper-wrapper">
+								<a class="swiper-slide" href="img/food/1.jpg" target="_blank">
+									<img src="img/food/1.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/food/2.jpg" target="_blank">
+									<img src="img/food/2.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/food/3.jpg" target="_blank">
+									<img src="img/food/3.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/food/1.jpg" target="_blank">
+									<img src="img/food/1.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/food/2.jpg" target="_blank">
+									<img src="img/food/2.jpg" />
+								</a>
+								<a class="swiper-slide" href="img/food/3.jpg" target="_blank">
+									<img src="img/food/3.jpg" />
+								</a>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!--美食介绍-->
+						<h4>美食简介</h4>
+						<div class="food-intro">
+							<p></p>
+							<p>1.西湖醋鱼，别名为叔嫂传珍，宋嫂鱼，是浙江杭州饭店的一道传统地方风味名菜。</p>
+							<p>2.西湖醋鱼选用西湖鲲鱼作原料，烹制前一般先要在鱼笼中饿养一两天，使其排泄肠内杂物，除去泥土味。烹制时火候要求非常严格，仅能用三四分钟烧得恰到好处。烧好后，再浇上一层平滑油亮的糖醋，胸鳍竖起，鱼肉嫩美，带有蟹味，道鲜嫩酸甜。 肉滋别具特色。</p>
+							<p>3.2018年9月10日，“中国菜”正式发布，“西湖醋鱼“被评为浙江十大经典名菜。</p>
+						</div>
+						<hr/>
+						<!--其他信息-->
+						<div class="other">
+							<div>典故：</div>
+							<div class="story">
+								相传在南宋时，有宋氏兄弟两人，颇有学问，但不愿为官，因而隐居江湖，靠打鱼为生。当地有一恶霸，名赵大官人，他见宋嫂年轻貌美，便施阴谋害死了宋兄，欲霸占宋嫂。至此，宋家叔嫂祸从天降，悲痛欲绝。为了报兄仇，叔嫂一起到衙门喊冤告状，哪知当时的官府与恶势力一个鼻孔出气，告状不成，反遭毒打，把他们赶出了衙门。回家后，嫂嫂只有让弟弟远逃他乡。叔嫂分手时，宋嫂特用糖、醋烧鲩鱼一碗，对兄弟说：“这菜有酸有甜，望你有出头之日，勿忘今日辛酸”。后来，宋弟外出，抗金卫国，立了功劳，回到杭州，惩办了恶棍，但一直查找不到嫂嫂的下落。一次外出赴宴，席间得知此菜，经询问方知嫂嫂隐姓埋名在这里当厨工，由此始得团聚。于是，“叔嫂传珍”这道美菜，也同传说一样在民间流传开来。
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 detail_right">
+						<div class="comment clearfix">
+							<div>综合评分：</div>
+							<div class="star">
+								<ul class="bottom-star clearfix">
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+									<li><i class="iconfont icon-xingxing"></i></li>
+								</ul>
+								<div class="top-star">
+									<ul class="top-inner clearfix">
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+										<li><i class="iconfont icon-xingxing"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="avg-score"><span>5</span>分</div>
+						</div>
+						<!--点击显示 添加点评面板，再次点击隐藏-->
+						<button type="button" class="btn btn-lg" id="add-comment">
+							<i class="iconfont icon-add-fill"></i>
+							<span>我要点评</span>
+						</button>
+						<div class="add-comment-area hidden">
+							<form class="form-horizontal" autocomplete="off">
+								<!--总评分-->
+								<label>总体评分</label>
+								<div class="form-group">
+									<div class="col-md-10">
+										<ul class="star clearfix">
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+											<li><i class="iconfont icon-xingxing"></i></li>
+										</ul>
+										<div class="tip">
+											<div class="star-tip">不建议</div>
+											<div class="star-tip">不太推荐</div>
+											<div class="star-tip">还可以</div>
+											<div class="star-tip">值得一试</div>
+											<div class="star-tip">强烈推荐</div>
+											<div class="star-tip show-tip">点击星星打分</div>
+										</div>
+									</div>
+								</div>
+								<!--内容-->
+								<label>内容（请真实客观地评价哦~）</label>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div id="editor">
+
+										</div>
+									</div>
+								</div>
+								<!--发表点评-->
+								<button type="button" class="btn" id="publish-comment">发表点评</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--分割-->
+				<div class="row line">
+					<div class="col-md-8">
+						<hr/>
+					</div>
+				</div>
+				<!--显示点评部分-->
+				<div class="row" id="show-comment">
+					<div class="col-md-12">
+						<div class="comment-header">所有点评均来自Galaksen用户，按发表时间先后显示，仅供参考哦~（共<span class="comment-number">12条</span>点评）</div>
+						<!--点评列表-->
+						<div class="comment-list">
+							<!--点评内容-->
+							<div class="comment-content">
+								<div class="row">
+									<div class="col-md-2">
+										<!--点评的用户-->
+										<div class="comment-user">
+											<a href="#" class="text-center"><img class="comment-img img-circle" src="img/head1.jpg" /></a>
+											<a href="#" class="text-center comment-name">用户名</a>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<!--该用户点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--该用户点评的内容（文字）-->
+										<div class="comment-editor">
+											西湖醋鱼是最正宗的西湖草鱼来做，草鱼的刺比较多，肉也没有其它价格相比较而言贵的鱼好吃细腻，但是用醋来配上草鱼就可以制作出来非常极其美味的味道。由于草鱼身上都会带一点土的味道，所以店家一般在草鱼要被做成菜的前几天，什么都不投喂，这样草鱼就会把自身的杂物排出去一些，土腥味道也就没有那么浓重了。所以我们如果想要吃到没那么土腥的西湖醋鱼的话，小编教大家一个窍门，就是在选择饭店的时候最好要看一看这家店有没有专门喂养草鱼的鱼池，如果有的话这家店做的西湖醋鱼起码要比没有的他们做的正宗。
+										</div>
+										<!--用户上传的图片-->
+										<div class="food-imgs">
+											<a href="img/food/1.jpg" target="_blank"><img src="img/food/1.jpg" /></a>
+											<a href="img/food/2.jpg" target="_blank"><img src="img/food/2.jpg" /></a>
+											<a href="img/food/3.jpg" target="_blank"><img src="img/food/3.jpg" /></a>
+										</div>
+										<!--发表点评的时间-->
+										<div class="comment-time">发表时间：<span>2018-10-13 05:56:31</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-content">
+								<div class="row">
+									<div class="col-md-2">
+										<!--点评的用户-->
+										<div class="comment-user">
+											<a href="#" class="text-center"><img class="comment-img img-circle" src="img/head1.jpg" /></a>
+											<a href="#" class="text-center comment-name">用户名</a>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<!--该用户点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--该用户点评的内容（文字）-->
+										<div class="comment-editor">
+											西湖醋鱼是最正宗的西湖草鱼来做，草鱼的刺比较多，肉也没有其它价格相比较而言贵的鱼好吃细腻，但是用醋来配上草鱼就可以制作出来非常极其美味的味道。由于草鱼身上都会带一点土的味道，所以店家一般在草鱼要被做成菜的前几天，什么都不投喂，这样草鱼就会把自身的杂物排出去一些，土腥味道也就没有那么浓重了。所以我们如果想要吃到没那么土腥的西湖醋鱼的话，小编教大家一个窍门，就是在选择饭店的时候最好要看一看这家店有没有专门喂养草鱼的鱼池，如果有的话这家店做的西湖醋鱼起码要比没有的他们做的正宗。
+										</div>
+										<!--用户上传的图片-->
+										<div class="food-imgs">
+											<a href="img/food/1.jpg" target="_blank"><img src="img/food/1.jpg" /></a>
+											<a href="img/food/2.jpg" target="_blank"><img src="img/food/2.jpg" /></a>
+											<a href="img/food/3.jpg" target="_blank"><img src="img/food/3.jpg" /></a>
+										</div>
+										<!--发表点评的时间-->
+										<div class="comment-time">发表时间：<span>2018-10-13 05:56:31</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-content">
+								<div class="row">
+									<div class="col-md-2">
+										<!--点评的用户-->
+										<div class="comment-user">
+											<a href="#" class="text-center"><img class="comment-img img-circle" src="img/head1.jpg" /></a>
+											<a href="#" class="text-center comment-name">用户名</a>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<!--该用户点评的星级-->
+										<div class="comment clearfix">
+											<div>总体评分：</div>
+											<div class="star">
+												<ul class="bottom-star clearfix">
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+													<li><i class="iconfont icon-xingxing"></i></li>
+												</ul>
+												<div class="top-star">
+													<ul class="top-inner clearfix">
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+														<li><i class="iconfont icon-xingxing"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="avg-score"><span>8</span>分</div>
+										</div>
+										<!--该用户点评的内容（文字）-->
+										<div class="comment-editor">
+											西湖醋鱼是最正宗的西湖草鱼来做，草鱼的刺比较多，肉也没有其它价格相比较而言贵的鱼好吃细腻，但是用醋来配上草鱼就可以制作出来非常极其美味的味道。由于草鱼身上都会带一点土的味道，所以店家一般在草鱼要被做成菜的前几天，什么都不投喂，这样草鱼就会把自身的杂物排出去一些，土腥味道也就没有那么浓重了。所以我们如果想要吃到没那么土腥的西湖醋鱼的话，小编教大家一个窍门，就是在选择饭店的时候最好要看一看这家店有没有专门喂养草鱼的鱼池，如果有的话这家店做的西湖醋鱼起码要比没有的他们做的正宗。
+										</div>
+										<!--用户上传的图片-->
+										<div class="food-imgs">
+											<a href="img/food/1.jpg" target="_blank"><img src="img/food/1.jpg" /></a>
+											<a href="img/food/2.jpg" target="_blank"><img src="img/food/2.jpg" /></a>
+											<a href="img/food/3.jpg" target="_blank"><img src="img/food/3.jpg" /></a>
+										</div>
+										<!--发表点评的时间-->
+										<div class="comment-time">发表时间：<span>2018-10-13 05:56:31</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--分页器-->
+						<nav aria-label="Page navigation" class="foot-pagination clearfix">
+							<ul class="pagination">
+								<li>
+									<a href="#">首页</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="current-pag">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">6</a>
+								</li>
+								<li>
+									<a href="#">7</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">尾页</a>
+								</li>
+							</ul>
+							<div class="data-number">共<span class="page">17</span>页/<span class="num">119</span>条</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">错误反馈</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" autocomplete="off" id="error-form">
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>选择错误类型：</label>
+									<div class="radio-inline">
+										<label><input type="radio" name="error-group" id="intro" value="intro">美食简介</label>
+									</div>
+									<div class="radio-inline">
+										<label><input type="radio" name="error-group" id="location" value="location">典故</label>
+									</div>								
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>填写错误内容：</label>
+									<textarea class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn" id="submit-error">提交错误</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/wangEditor.min.js"></script>
+	<script type="text/javascript" src="js/food_detail.js"></script>
+	</body>
+
+</html>

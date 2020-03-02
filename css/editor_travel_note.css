@@ -1,0 +1,122 @@
+body {
+	font-size: 16px;
+	background: rgba(188, 210, 238, 0.4);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/*返回顶部*/
+
+.top {
+	position: fixed;
+	top: 80%;
+	right: 20px;
+}
+
+#top-btn {
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+
+#top-btn:hover {
+	background: rgba(238, 169, 184, .5);
+}
+/*路径导航*/
+.editor-note .breadcrumb {
+	margin-top: 20px;
+	background: transparent;
+}
+/*编写游记*/
+.editor-note .main-editor{
+	padding: 15px;
+}
+
+.w-e-text-container {
+	height: 400px !important;
+	background: #fff;
+}
+.editor-note .main-editor .site-show{
+	border: 1px solid #ccc;
+	background: #fff;
+	padding:15px;
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+	display: none;
+}
+.editor-note  .main-editor .site-show .city{
+	display: none;
+}
+.editor-note  .main-editor .site-show dl{
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.editor-note  .main-editor .site-show dt{
+	margin-bottom: 10px;
+}
+.site-show .city dt span:first-child{
+	color:#8B636C;
+	margin-right: 5px;
+}
+.site-show .city dt.current-province{
+	margin-left: 5px;
+}
+.editor-note .main-editor .site-show dd{
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin-bottom:10px;
+	color: #828282;
+}
+.editor-note .main-editor .site-show dd:hover{
+	color:#000;
+	text-decoration: underline;
+}
+.editor-note  .main-editor .tip{
+	width:60%;
+	padding: 10px;
+	background: #F6F6F6;
+	margin: 10px 0;
+	font-size: 14px;
+	color: #999999;
+}
+.editor-note  .main-editor .tags{
+	width:80%;
+}
+.editor-note .main-editor .tags .tag{
+	display: inline-block;
+	height: 25px;
+	font-size: 15px;
+	line-height: 100%;
+	margin:5px 20px 10px 0;
+}
+.editor-note  .main-editor .tags .tag:hover{
+	cursor: pointer;
+}
+.editor-note  .main-editor #publish,
+.editor-note  .main-editor #save{
+	margin:10px 0;
+	outline: none;
+	width:30%;
+	border: transparent;
+	background:	#EEB4B4;
+	margin-right: 30px;
+}
+.editor-note  .main-editor .tags .tag.checked{
+	background:#8B636C;
+}

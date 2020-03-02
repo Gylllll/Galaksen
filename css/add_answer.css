@@ -1,0 +1,89 @@
+body {
+	font-size: 16px;
+	background: rgba(188, 210, 238, 0.4);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/*path-nav*/
+.answer-container .path-nav {
+	margin-top: 20px;
+	background: transparent;
+}
+/*question*/
+.answer-container .question {
+	width: 100%;
+	background: rgba(238, 224, 229, .5);
+	padding: 10px 20px;
+	margin-top: 40px;
+}
+.question .question-title a {
+	color: #000;
+}
+
+.question .question-title a:hover {
+	color: #8B636C;
+}
+
+.question .tags {
+	margin: 20px 0;
+}
+
+.question .asker {
+	margin: 10px 0;
+}
+
+.question .asker i {
+	font-size: 16px;
+}
+
+.question .asker .site {
+	margin-right: 5px;
+}
+
+.question .asker .asker-img {
+	width: 20px;
+	height: 20px;
+}
+
+.question .asker .asker-name{
+	color: #8B658B;
+	font-size: 14px;
+}
+.question .asker div{
+	display: inline-block;
+	font-size: 14px;
+	float: right;
+	vertical-align: middle;
+}
+
+/*answer*/
+.answer-container .answer label{
+	padding: 0;
+	height:20px;
+	margin-bottom: 20px;
+}
+.w-e-text-container {
+	height: 300px !important;
+	background: #fff;
+}
+
+.answer-container .answer .submit{
+	float: right;
+	margin-top: 30px;
+	outline: none;
+	width: 50%;
+	background:	#EEB4B4;
+}

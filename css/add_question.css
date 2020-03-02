@@ -1,0 +1,137 @@
+body {
+	font-size: 16px;
+	background: rgba(188, 210, 238, 0.4);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/*.editor-left*/
+.editor .editor-left .path-nav {
+	margin-top: 20px;
+	background: transparent;
+}
+
+.editor .editor-left .main-editor {
+	padding: 0 20px;
+}
+
+.editor .editor-left .main-editor label {
+	margin: 20px 0 10px 0;
+}
+
+.editor .editor-left .main-editor .question-title,
+.editor .editor-left .main-editor .site,
+.editor .editor-left .main-editor .input-tag {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.editor .editor-left .main-editor #editor {
+	/*10/12*/
+	width: 83.3%;
+	border: 1px solid transparent;
+}
+
+.w-e-text-container {
+	height: 200px !important;
+	background: #fff;
+}
+.editor .editor-left .main-editor .site-show{
+	border: 1px solid #ccc;
+	background: #fff;
+	padding:15px;
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+	display: none;
+}
+.editor .editor-left .main-editor .site-show .city{
+	display: none;
+}
+.editor .editor-left .main-editor .site-show dl{
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.editor .editor-left .main-editor .site-show dt{
+	margin-bottom: 10px;
+}
+.site-show .city dt span:first-child{
+	color:#8B636C;
+	margin-right: 5px;
+}
+.site-show .city dt .current-province{
+	margin-left: 5px;
+}
+.editor .editor-left .main-editor .site-show dd{
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin-bottom:10px;
+	color: #828282;
+}
+.editor .editor-left .main-editor .site-show dd:hover{
+	color:#000;
+	text-decoration: underline;
+}
+.editor .editor-left .main-editor .tip{
+	width:50%;
+	padding: 10px 0;
+	background: #F6F6F6;
+	margin: 10px 0;
+	font-size: 14px;
+	color: #999999;
+}
+.editor .editor-left .main-editor .tags{
+	width:80%;
+}
+.editor .editor-left .main-editor .tags .tag{
+	display: inline-block;
+	height: 25px;
+	font-size: 15px;
+	line-height: 100%;
+	margin:5px 20px 10px 0;
+}
+.editor .editor-left .main-editor .tags .tag:hover{
+	cursor: pointer;
+}
+.editor .editor-left .main-editor .publish{
+	margin-top: 30px;
+	outline: none;
+	width: 50%;
+	background:	#EEB4B4;
+}
+.editor .editor-left .main-editor .tags .tag.checked{
+	background:#8B636C;
+}
+/*.editor-right*/
+.editor .editor-right div{
+	margin: 50px 0 20px 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+.editor .editor-right p{
+	line-height: 2em;
+}
+

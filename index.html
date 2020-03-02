@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Galaksen-首页</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_o44z082jarn.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+	</head>
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<!--轮播-->
+		<div class="banner">
+			<div class="swiper-container slider" id="swiper1">
+				<div class="swiper-wrapper">
+					<a class="swiper-slide" href="#">
+						<img src="img/1.jpg" />
+						<div class="show-title">
+							<div class="date">这里写日期</div>
+							<h3>这里是相关文章的标题</h3>
+						</div>
+					</a>
+					<a class="swiper-slide" href="#">
+						<img src="img/2.jpg" />
+						<div class="show-title">
+							<div class="date">这里写日期</div>
+							<h3>这里是相关文章的标题</h3>
+						</div>
+					</a>
+					<a class="swiper-slide" href="#">
+						<img src="img/3.jpg" />
+						<div class="show-title">
+							<div class="date">这里写日期</div>
+							<h3>这里是相关文章的标题</h3>
+						</div>
+					</a>
+					<a class="swiper-slide" href="#">
+						<img src="img/4.jpg" />
+						<div class="show-title">
+							<div class="date">这里写日期</div>
+							<h3>这里是相关文章的标题</h3>
+						</div>
+					</a>
+					<a class="swiper-slide" href="#">
+						<img src="img/5.jpg" />
+						<div class="show-title">
+							<div class="date">这里写日期</div>
+							<h3>这里是相关文章的标题</h3>
+						</div>
+					</a>
+					<a class="swiper-slide" href="#">
+						<img src="img/6.jpg" />
+						<div class="show-title">
+							<div class="date">这里写日期</div>
+							<h3>这里是相关文章的标题</h3>
+						</div>
+					</a>
+				</div>
+				<div class="pagination">
+					<div class="pagination-container">
+						<!--分页器 -->
+						<div class="swiper-pagination swiper-pagination1"></div>
+					</div>
+				</div>
+				<!--导航按钮 -->
+				<div class="swiper-button-prev  swiper-button-white"></div>
+				<div class="swiper-button-next  swiper-button-white"></div>
+			</div>
+		</div>
+		<!--主体内容-->
+		<div class="main-container" id="travel-note">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="main-aside">							
+							<div class="thumbnail hot-food">
+								<div class="aside-head">
+									<h4>热门美食</h4>
+									<a href="food.html">美食首页</a>
+								</div>
+								<div class="swiper-container" id="swiper2">
+									<div class="swiper-wrapper">
+										<a class="swiper-slide" href="#">
+											<img src="img/1.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/2.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/3.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/4.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/5.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/6.jpg" />
+										</a>
+									</div>
+									<div class="swiper-pagination swiper-pagination2"></div>
+								</div>
+								<div class="caption">
+									<div class="food-detail">
+										<a href="#"><i class="iconfont icon-meishi"></i><span class="food-name">美食名称</span></a>
+										<a href="#"><i class="iconfont icon-location"></i><span class="food-location">定位(浙江杭州)</span></a>
+									</div>
+									<p class="food-intro">美食简介</p>
+								</div>
+							</div>
+							<div class="thumbnail hot-scenery-spot">
+								<div class="aside-head">
+									<h4>热门景点</h4>
+									<a href="scenery.html">景点首页</a>
+								</div>
+								<div class="swiper-container" id="swiper3">
+									<div class="swiper-wrapper">
+										<a class="swiper-slide" href="#">
+											<img src="img/1.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/2.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/3.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/4.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/5.jpg" />
+										</a>
+										<a class="swiper-slide" href="#">
+											<img src="img/6.jpg" />
+										</a>
+									</div>
+									<div class="swiper-pagination swiper-pagination3"></div>
+								</div>
+								<div class="caption">
+									<div class="scenery-detail">
+										<a href="#"><i class="iconfont icon-jingdian"></i><span class="scenery-name">西湖</span></a>
+										<a href="#"><i class="iconfont icon-location"></i><span class="scenery-location">定位(浙江杭州)</span></a>
+									</div>
+									<p class="scenery-intro">景点简介</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="main-travelnotes">
+							<div class="row travel-nav">
+								<div class="col-md-8">
+									<ul class="travel-nav-left">
+										<li class="hot current">
+											<a href="#">热门游记<i class="iconfont icon-remen"></i>
+												<!--<button class="btn btn-default btn-sx" type="submit">
+													<i class="iconfont icon-shaixuan" style="font-size:16px;"></i>
+													排序</button>-->
+											</a>
+										</li>
+										<li class="new">
+											<a href="#">最新发布<i class="iconfont icon-new"></i></a>
+										</li>
+										<li class="more">
+											<a href="travel_note.html">更多>></a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<a class="btn btn-default travel-nav-right" href="editor_travel_note.html" role="button"><i class="iconfont icon-xieyouji"></i><span>写游记</span></a>
+								</div>
+							</div>
+							<div class="travel-note">
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/1.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题游记的标题游记的标题游记的标题游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="note-place"><i class="iconfont icon-location"></i>
+														<a href="#">地点名(西湖)</a>
+													</div>
+													<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+														<a href="#">用户名</a>
+													</div>
+													<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													<div class="note-like"><i class="iconfont icon-like" style="color:#EE0000;"></i><span>like(123)</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/2.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="note-place"><i class="iconfont icon-location"></i>
+														<a href="#">地点名(西湖)</a>
+													</div>
+													<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+														<a href="#">用户名</a>
+													</div>
+													<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													<div class="note-like"><i class="iconfont icon-like" style="color:#EE0000;"></i><span>like(123)</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/3.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="note-place"><i class="iconfont icon-location"></i>
+														<a href="#">地点名(西湖)</a>
+													</div>
+													<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+														<a href="#">用户名</a>
+													</div>
+													<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													<div class="note-like"><i class="iconfont icon-like" style="color:#EE0000;"></i><span>like(123)</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/4.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="note-place"><i class="iconfont icon-location"></i>
+														<a href="#">地点名(西湖)</a>
+													</div>
+													<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+														<a href="#">用户名</a>
+													</div>
+													<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													<div class="note-like"><i class="iconfont icon-like" style="color:#EE0000;"></i><span>like(123)</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/5.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="note-place"><i class="iconfont icon-location"></i>
+														<a href="#">地点名(西湖)</a>
+													</div>
+													<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+														<a href="#">用户名</a>
+													</div>
+													<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													<div class="note-like"><i class="iconfont icon-like" style="color:#EE0000;"></i><span>like(123)</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/6.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="note-place"><i class="iconfont icon-location"></i>
+														<a href="#">地点名(西湖)</a>
+													</div>
+													<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+														<a href="#">用户名</a>
+													</div>
+													<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													<div class="note-like"><i class="iconfont icon-like" style="color:#EE0000;"></i><span>like(123)</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/1.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="note-place"><i class="iconfont icon-location"></i>
+														<a href="#">地点名(西湖)</a>
+													</div>
+													<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+														<a href="#">用户名</a>
+													</div>
+													<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													<div class="note-like"><i class="iconfont icon-like" style="color:#EE0000;"></i><span>like(123)</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav aria-label="Page navigation" class="foot-pagination clearfix">
+									<ul class="pagination">
+										<li>
+											<a href="#">首页</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+											</a>
+										</li>
+										<li class="current-pag">
+											<a href="#">1</a>
+										</li>
+										<li>
+											<a href="#">2</a>
+										</li>
+										<li>
+											<a href="#">3</a>
+										</li>
+										<li>
+											<a href="#">4</a>
+										</li>
+										<li>
+											<a href="#">5</a>
+										</li>
+										<li>
+											<a href="#">6</a>
+										</li>
+										<li>
+											<a href="#">7</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">尾页</a>
+										</li>
+									</ul>
+									<div class="data-number">共<span class="page">17</span>页/<span class="num">119</span>条</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+
+</html>

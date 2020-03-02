@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-美食</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_atgij504lrr.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/food.css" />
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="food-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!--搜索框-->
+						<div class="search">
+							<form class="search-form">
+								<div class="form-group">
+									<div class="col-md-6">
+										<input type="text" class="form-control" id="search-input1" placeholder="输入你感兴趣的美食名称（关键字或全称）" />
+									</div>
+									<button type="button" class="btn btn-default" id="search-btn1"><i class="iconfont icon-sousuo"></i></button>
+								</div>
+								<div class="form-group">
+									<div class="col-md-6">
+										<input type="text" class="form-control" id="search-input2" placeholder="选择地区以筛选美食" />
+										<!--省市-->
+										<div class="province-city">
+											<dl class="province clearfix"><dt>国内</dt>
+												<dd>新疆</dd>
+												<dd>西藏</dd>
+												<dd>青海</dd>
+												<dd>甘肃</dd>
+												<dd>内蒙古</dd>
+												<dd>四川</dd>
+												<dd>云南</dd>
+												<dd>贵州</dd>
+												<dd>宁夏</dd>
+												<dd>广西</dd>
+												<dd>陕西</dd>
+												<dd>湖北</dd>
+												<dd>海南</dd>
+												<dd>湖南</dd>
+												<dd>广东</dd>
+												<dd>山西</dd>
+												<dd>河南</dd>
+												<dd>河北</dd>
+												<dd>澳门</dd>
+												<dd>江西</dd>
+												<dd>香港</dd>
+												<dd>山东</dd>
+												<dd>北京</dd>
+												<dd>福建</dd>
+												<dd>江苏</dd>
+												<dd>天津</dd>
+												<dd>浙江</dd>
+												<dd>辽宁</dd>
+												<dd>上海</dd>
+												<dd>黑龙江</dd>
+												<dd>吉林</dd>
+												<dd>台湾 </dd>
+											</dl>
+											<dl class="city clearfix"><dt><span>国内</span>>><span class="current-province">西藏</span></dt>
+												<dd>拉萨</dd>
+												<dd>林芝</dd>
+												<dd>阿里</dd>
+												<dd>日喀则</dd>
+												<dd>山南</dd>
+												<dd>那曲</dd>
+												<dd>昌都</dd>
+											</dl>
+										</div>
+									</div>
+									<button type="button" class="btn btn-default" id="search-btn2"><i class="iconfont icon-sousuo"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--分割线-->
+				<hr/>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="food-nav"><a href="food.html">全部美食>></a>&nbsp;当前（按评分高到低）：[&nbsp;<span class="site">全部</span>&nbsp;]</div>
+						<!--景点列表-->
+						<div class="food-list">
+							<div class="food-list-part">
+								<div class="row">
+									<!--景点-->
+									<div class="col-md-4 foods">
+										<div class="thumbnail food-detail">
+											<a href="food_detail.html">
+												<div class="food-name">西湖醋鱼</div>
+											</a>
+											<a href="food_detail.html"><img class="food-img" src="img/food/1.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="food_detail.html">
+													<p class="food-caption">
+														“西湖醋鱼”又叫“叔嫂传珍”。相传古时有宋姓兄弟两人隐居在西湖以打鱼为生。当地恶棍想霸占宋兄之妻，就谋害死宋兄。宋弟外逃时，嫂嫂烧了一碗鱼作为践行。后来，宋弟取得功名，报了杀兄之仇，并找到嫂嫂，辞官后重新过起捕鱼为生的渔家生活。 古代有人曾为此菜写了一首诗：“裙屐联翩买醉来，绿阳影里上楼台，门前多少游湖艇，半自三潭印月回。何必归寻张翰鲈（誉西湖醋鱼胜过味美适口的松江鲈鱼），鱼美风味说西湖，亏君有此调和手，识得当年宋嫂无。”诗的最后一句指的就是“西湖醋鱼”创制传说。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 foods">
+										<div class="thumbnail food-detail">
+											<a href="#">
+												<div class="food-name">西湖醋鱼</div>
+											</a>
+											<a href="#"><img class="food-img" src="img/food/1.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="food-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 foods">
+										<div class="thumbnail food-detail">
+											<a href="#">
+												<div class="food-name">西湖醋鱼</div>
+											</a>
+											<a href="#"><img class="food-img" src="img/food/1.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="food-caption">
+														西湖醋鱼选用西湖鲲鱼作原料，烹制前一般先要在鱼笼中饿养一两天，使其排泄肠内杂物，除去泥土味。烹制时火候要求非常严格，仅能用三四分钟烧得恰到好处。烧好后，再浇上一层平滑油亮的糖醋，胸鳍竖起，鱼肉嫩美，带有蟹味，道鲜嫩酸甜。 肉滋别具特色。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<!--景点-->
+									<div class="col-md-4 foods">
+										<div class="thumbnail food-detail">
+											<a href="#">
+												<div class="food-name">西湖醋鱼</div>
+											</a>
+											<a href="#"><img class="food-img" src="img/food/1.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="food-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 foods">
+										<div class="thumbnail food-detail">
+											<a href="#">
+												<div class="food-name">西湖醋鱼</div>
+											</a>
+											<a href="#"><img class="food-img" src="img/food/1.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="food-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 foods">
+										<div class="thumbnail food-detail">
+											<a href="#">
+												<div class="food-name">西湖醋鱼</div>
+											</a>
+											<a href="#"><img class="food-img" src="img/food/1.jpg"></a>
+											<div class="caption">
+												<h5><i class="iconfont icon-location"></i><span class="site">浙江杭州</span></h5>
+												<!--点评-->
+												<div class="comment clearfix">
+													<div>评分：</div>
+													<div class="star">
+														<ul class="bottom-star clearfix">
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+															<li><i class="iconfont icon-xingxing"></i></li>
+														</ul>
+														<div class="top-star">
+															<ul class="top-inner clearfix">
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+																<li><i class="iconfont icon-xingxing"></i></li>
+															</ul>
+														</div>
+													</div>
+													<div class="avg-score"><span>5</span>分/</div>
+													<div class="comment-number">共<span>12</span>个点评</div>
+												</div>
+												<!--简介-->
+												<a href="#">
+													<p class="food-caption">
+														首批国家5A级旅游景区和中国十大风景名胜之一，2011年被列入世界遗产名录。以一山、二塔、三岛、三堤、五湖为基本格局，著名的西湖十景点缀其间，自然与人文相互映衬，美不胜收。出现在人民币壹圆纸币背面的三潭印月景观，亦体现西湖在中国风景名胜中特殊的地位。 游玩西湖可以步行、坐游船、乘电瓶车、自驾或骑行。
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--更多-->
+						<div class="more text-center">点击加载更多<i class="iconfont icon-double-arrow-down"></i></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/food.js"></script>
+	</body>
+
+</html>

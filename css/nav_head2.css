@@ -1,0 +1,155 @@
+/*导航*/
+/*body{
+	padding-top: 55px; 
+}*/
+i[class*="iconfont"] {
+	font-size: 26px;
+	color: #8B636C;
+}
+
+.my-nav {
+	background: #BCD2EE;
+	border: 0;
+}
+
+.my-nav a {
+	color:#1C1C1C;
+}
+.my-nav a:hover{
+	color: #8B636C;
+}
+.nav-container .nav-left>li:nth-of-type(2):hover,
+.nav-left>li:nth-of-type(3):hover,
+.nav-left>li:nth-of-type(4):hover,
+.nav-left>li:nth-of-type(6):hover {
+	color: #8B636C;
+	border-bottom: 3px solid #8B636C;
+}
+
+.nav-container .nav-left>li {
+	float: left;
+	height: 55px;
+	padding: 0 16px;
+}
+
+.nav-container .nav-left li.nav-name {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.nav-container .nav-left .nav-name>a {
+	font-size: 20px;
+	font-weight: 600;
+	color: #8B636C;
+}
+
+.nav-container .nav-left .my-active {
+	background: #A2B5CD;
+}
+
+.nav-container .nav-left .my-dropdown {
+	position: relative;
+}
+
+.nav-container .nav-left .my-dropdown .my-dropdown-menu {
+	display: none;
+	width: 150%;
+	position: absolute;
+	left: 16px;
+	top: 55px;
+	background: rgba(188, 210, 238, 0.9);
+	border: 1px solid transparent;
+	z-index: 99;
+}
+
+.nav-container .nav-left a {
+	line-height: 55px;
+	display: inline-block;
+}
+
+.nav-container .nav-left .my-dropdown>a {
+	box-sizing: border-box;
+	line-height: 52px;
+	border-top: 3px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	cursor: pointer;
+	padding: 0 5px;
+}
+
+.nav-container .nav-left .my-dropdown:hover>a {
+	border-top: 3px solid #8B636C;
+	border-left: 1px solid #9FB6CD;
+	border-right: 1px solid #9FB6CD;
+}
+
+.nav-container .nav-left .my-dropdown:hover .my-dropdown-menu {
+	display: block;
+	border: 1px solid #9FB6CD;
+	border-top: 0;
+}
+
+.nav-container .nav-left .my-dropdown .my-dropdown-menu>li {
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.nav-container .nav-left .my-dropdown .my-dropdown-menu>li>a {
+	display: block;
+	line-height: 40px;
+}
+
+.nav-container .nav-left .my-dropdown .my-dropdown-menu>li:hover {
+	background: #A2B5CD;
+}
+/*导航右*/
+.nav-container .nav-right>li{
+	float: left;
+	height: 55px;
+	padding: 0 7px;
+}
+.nav-container .nav-right>li>a{
+	display: inline-block;
+	line-height: 55px;
+}
+/*登录前 导航右*/
+.nav-container .login-before i:hover {
+	color: #4F4F4F;
+}
+/*登录后 导航右*/
+.nav-container .login-after>li{
+	float:right;
+}
+.nav-container .login-after .message{
+	position: relative;
+	padding-left: 0;
+	margin-right: 7px;
+}
+.nav-container .login-after .message .message-menu{
+	display: none;
+	position: absolute;
+	background: #BCD2EE;
+	z-index: 99;
+	width: 150%;
+	left:-50%;
+	top: 55px;
+}
+.nav-container .login-after .message:hover>a{
+	color: #8B7B8B;
+}
+.nav-container .login-after i{
+	font-size: 20px;
+}
+.nav-container .login-after img{
+	border: 2px solid transparent;
+    width: 40px;
+    height: 40px;
+}
+.nav-container .login-after .user-img:hover img{
+	border: 2px solid #8B7B8B;
+}
+.nav-container .login-after .user-img:hover{
+	color: #8B7B8B;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-点赞当前回答的用户</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_yh4mjrx1ocs.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<style>
+			body {
+				font-size: 16px;
+				background: url(img/background4.jpg) no-repeat center center;
+				background-attachment: fixed;
+				background-size: cover;
+				position: relative;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			a:link,
+			a:visited,
+			a:hover,
+			a:active {
+				text-decoration: none;
+			}
+			
+			.my-nav {
+				background: rgba(205, 205, 193, .7);
+			}
+			
+			.nav-container .login-after .user .user-menu,
+			.nav-container .login-after .message .message-menu {
+				background: rgba(205, 205, 193, .7);
+			}
+			
+			.nav-container .login-after .user .user-menu li:hover,
+			.nav-container .login-after .message .message-menu li:hover {
+				background: #B5B5B5;
+			}
+			
+			.nav-container .login-after .user:hover>a:first-child,
+			.nav-container .login-after .message:hover>a:first-child {
+				border-left: 1px solid #8B8B83;
+				border-right: 1px solid #8B8B83;
+			}
+			
+			.nav-container .login-after .user:hover .user-menu,
+			.nav-container .login-after .message:hover .message-menu {
+				border-color: #8B8B83;
+			}
+			/*返回顶部*/
+			
+			.top {
+				position: fixed;
+				top: 80%;
+				right: 20px;
+			}
+			
+			#top-btn {
+				width: 50px;
+				height: 50px;
+				outline: none;
+				border: none;
+			}
+			
+			#top-btn:hover {
+				background: rgba(238, 169, 184, .5);
+			}
+			
+			.like_list {
+				margin: 20px 0;
+			}
+			
+			.like_list .container {
+				padding: 20px 0;
+				background: rgba(255, 255, 255, .8);
+				border-radius: 7px;
+			}
+			
+			.path-nav {
+				background: transparent;
+			}
+			
+			.like-container {
+				padding: 0 20px;
+			}
+			
+			.like-container>div {
+				margin-bottom: 20px;
+			}
+			
+			.like-container .answer-detail {
+				color: #9C9C9C;
+			}
+			
+			.like-img {
+				width: 50px;
+				height: 50px;
+			}
+			
+			.like a {
+				display: inline-block;
+			}
+			
+			.like li {
+				display: inline-block;
+				float: left;
+				margin-right: 30px;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="like_list">
+			<div class="container">
+				<ol class="breadcrumb path-nav">
+					<li>
+						<a href="person_space.html">个人中心</a>
+					</li>
+					<li class="active">我对问题<strong>“<span class="question-title">八月旅行国内去哪儿好？</span>”</strong>的回答</li>
+					<li class="active">点赞人数详情</span>
+					</li>
+				</ol>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="like-container">
+							<div>
+								回答详情：
+								<div class="answer-detail">
+									四天时间去远处旅行时间太紧张了，青岛威海就是看大海，而且海水浑浊，如果特别喜欢大海可以去。如果自驾游建议去塞罕坝国家森林公园，乌兰布统大草原，第一天早上从北京出发约二个小时到达河北承德在避暑山庄边酒店住下，午餐后游避暑山庄。第二天早上出发一个多小时到达塞罕坝国家森林公园游玩，下午开一个小时到达乌兰布统大草原住宿，第三天游玩大草原骑马品尝当地美食，第四天返回北京。这条线路是我自驾游走过的。夏季草原景色非常美尤其是八月初景色更美。
+								</div>
+							</div>
+							<div>点赞该回答的人：<span class="like-num">4</span>人</div>
+							<ul class="like clearfix">
+								<li>
+									<a href="javascript:;"><img class="img-circle like-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="like-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle like-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="like-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle like-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="like-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle like-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="like-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle like-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="like-name">用户名1</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			$('#header').load('nav_head.html', function() {
+				$('.nav-left li').removeClass('my-active');
+			});
+
+			//返回顶部
+			$(window).scroll(function() {
+				var top = $(this).scrollTop();
+				if(top >= 800) {
+					$(".top").removeClass('hidden');
+				} else {
+					$(".top").addClass('hidden');
+				}
+			});
+
+			//点击：返回顶部
+			$("#top-btn").click(function() {
+				$('html').animate({
+					scrollTop: '0px'
+				}, 800);
+				//$(window).scrollTop(0);
+			});
+		</script>
+	</body>
+
+</html>

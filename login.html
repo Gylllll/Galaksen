@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-登录</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrapValidator.min.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+
+	<body>
+		<!--水平排列的表单-->
+		<form class="form-horizontal" id="login" action="" autocomplete="off">
+			<h2 class="text-center">登录</h2>
+			<div class="form-group">
+				<label for="telePhone" class="col-sm-3 control-label">手机号</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" id="telePhone" name="telePhone" placeholder="输入您的手机号" autofocus/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="passWord" class="col-sm-3 control-label">密码</label>
+				<div class="col-sm-9">
+					<input type="password" class="form-control" id="passWord" name="passWord" placeholder="输入您的密码" />
+				</div>
+			</div>
+			<div class="form-group" id="status">
+				<div class="col-sm-5">
+					<input type="checkbox" id="remember" name="remember" value="0" />记住登录状态
+				</div>
+				<div class="col-sm-7 text-right">
+					<a href="register.html">还没有账号？点此注册</a>
+				</div>
+			</div>
+			</div>
+			<div class="form-group" id="btn-group">
+				<div class="col-sm-4">
+					<button type="button" class="my-btn" id="signIn">登录</button>
+				</div>
+				<div class="col-sm-4">
+					<button type="button" class="my-btn" id="reset">清空</button>
+				</div>
+				<div class="col-sm-4">
+					<button type="button" class="my-btn" id="return">返回首页</button>
+				</div>
+			</div>
+			<div class="form-group" id="forget">
+				<div class="col-sm-12">
+					<a href="find_pwd.html" class="center-block text-center">忘记密码？点此找回</a>
+				</div>
+			</div>
+		</form>
+		<!--模态框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body">
+						该手机号尚未注册
+						<a href="register.html">点我注册</a>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">我知道了
+				</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+	</body>
+
+</html>

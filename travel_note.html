@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-游记</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_yh4mjrx1ocs.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<link rel="stylesheet" href="css/travel_note.css" />
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="note-container">
+			<div class="container">
+				<!--搜索框-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="search">
+							<form class="search-form">
+								<div class="form-group">
+									<div class="col-md-6">
+										<input type="text" class="form-control" id="search-input" placeholder="选择地区以筛选游记" />
+										<!--省市-->
+										<div class="province-city">
+											<dl class="province clearfix"><dt>国内</dt>
+												<dd>新疆</dd>
+												<dd>西藏</dd>
+												<dd>青海</dd>
+												<dd>甘肃</dd>
+												<dd>内蒙古</dd>
+												<dd>四川</dd>
+												<dd>云南</dd>
+												<dd>贵州</dd>
+												<dd>宁夏</dd>
+												<dd>广西</dd>
+												<dd>陕西</dd>
+												<dd>湖北</dd>
+												<dd>海南</dd>
+												<dd>湖南</dd>
+												<dd>广东</dd>
+												<dd>山西</dd>
+												<dd>河南</dd>
+												<dd>河北</dd>
+												<dd>澳门</dd>
+												<dd>江西</dd>
+												<dd>香港</dd>
+												<dd>山东</dd>
+												<dd>北京</dd>
+												<dd>福建</dd>
+												<dd>江苏</dd>
+												<dd>天津</dd>
+												<dd>浙江</dd>
+												<dd>辽宁</dd>
+												<dd>上海</dd>
+												<dd>黑龙江</dd>
+												<dd>吉林</dd>
+												<dd>台湾 </dd>
+											</dl>
+											<dl class="city clearfix"><dt><span>国内</span>>><span class="current-province">西藏</span></dt>
+												<dd>拉萨</dd>
+												<dd>林芝</dd>
+												<dd>阿里</dd>
+												<dd>日喀则</dd>
+												<dd>山南</dd>
+												<dd>那曲</dd>
+												<dd>昌都</dd>
+											</dl>
+										</div>
+									</div>
+									<button type="button" class="btn btn-default" id="search-btn"><i class="iconfont icon-sousuo"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--分割线-->
+				<hr />
+				<!--游记导航-->
+				<div class="note-nav">
+					<a href="travel_note.html">全部游记>></a>&nbsp;当前：[&nbsp;<span class="site">全部</span>&nbsp;]</div>
+				<!--游记列表-->
+				<div class="note-list">
+					<div class="note-list-part">
+						<div class="row">
+							<!--游记-->
+							<div class="col-md-6 note">
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="travel_note_detail.html"><img src="img/5.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="travel_note_detail.html" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="info1">
+														<div class="note-place"><i class="iconfont icon-location"></i> 地点名(西湖)
+														</div>
+														<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+															<a href="#">用户名</a>
+														</div>
+															<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													</div>
+													<div class="info2">								
+														<div class="note-like"><i class="iconfont icon-like"></i><span>点赞(123)</span></div>
+														<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(3)</span></div>
+														<div class="note-collect"><i class="iconfont icon-xingxing"></i><span>收藏(3)</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!--游记-->
+						<div class="col-md-6 note">
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/5.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="info1">
+														<div class="note-place"><i class="iconfont icon-location"></i> 地点名(西湖)
+														</div>
+														<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+															<a href="#">用户名</a>
+														</div>
+														<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													</div>
+													<div class="info2">														
+														<div class="note-like"><i class="iconfont icon-like"></i><span>点赞(123)</span></div>
+														<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(3)</span></div>
+														<div class="note-collect"><i class="iconfont icon-xingxing"></i><span>收藏(3)</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="row">
+							<!--游记-->
+							<div class="col-md-6 note">
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/5.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="info1">
+														<div class="note-place"><i class="iconfont icon-location"></i> 地点名(西湖)
+														</div>
+														<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+															<a href="#">用户名</a>
+														</div>
+															<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													</div>
+													<div class="info2">								
+														<div class="note-like"><i class="iconfont icon-like"></i><span>点赞(123)</span></div>
+														<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(3)</span></div>
+														<div class="note-collect"><i class="iconfont icon-xingxing"></i><span>收藏(3)</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!--游记-->
+						<div class="col-md-6 note">
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/5.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="info1">
+														<div class="note-place"><i class="iconfont icon-location"></i> 地点名(西湖)
+														</div>
+														<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+															<a href="#">用户名</a>
+														</div>
+														<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													</div>
+													<div class="info2">														
+														<div class="note-like"><i class="iconfont icon-like"></i><span>点赞(123)</span></div>
+														<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(3)</span></div>
+														<div class="note-collect"><i class="iconfont icon-xingxing"></i><span>收藏(3)</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="row">
+							<!--游记-->
+							<div class="col-md-6 note">
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/5.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="info1">
+														<div class="note-place"><i class="iconfont icon-location"></i> 地点名(西湖)
+														</div>
+														<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+															<a href="#">用户名</a>
+														</div>
+															<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													</div>
+													<div class="info2">								
+														<div class="note-like"><i class="iconfont icon-like"></i><span>点赞(123)</span></div>
+														<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(3)</span></div>
+														<div class="note-collect"><i class="iconfont icon-xingxing"></i><span>收藏(3)</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!--游记-->
+						<div class="col-md-6 note">
+								<div class="thumbnail clearfix">
+									<div class="row">
+										<div class="col-md-5 note-left">
+											<a href="#"><img src="img/5.jpg" class="note-img" /></a>
+										</div>
+										<div class="col-md-7 note-right">
+											<div class="note-detail">
+												<a href="#" class="note-title">游记的标题</a>
+												<p class="note-content">游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的 内容游记的内容游记的内容的内容游记的内容游记的内容游记的内容游记的内容游记的内容游记的内容
+												</p>
+												<div class="note-info">
+													<div class="info1">
+														<div class="note-place"><i class="iconfont icon-location"></i> 地点名(西湖)
+														</div>
+														<div class="note-user"><span>by</span><img src="img/head1.jpg" class="img-circle">
+															<a href="#">用户名</a>
+														</div>
+														<div class="note-view"><i class="iconfont icon-liulan"></i><span>浏览量(131)</span></div>
+													</div>
+													<div class="info2">														
+														<div class="note-like"><i class="iconfont icon-like"></i><span>点赞(123)</span></div>
+														<div class="note-comment"><i class="iconfont icon-pinglun"></i><span>评论(3)</span></div>
+														<div class="note-collect"><i class="iconfont icon-xingxing"></i><span>收藏(3)</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--更多-->
+				<div class="more text-center">点击加载更多<i class="iconfont icon-double-arrow-down"></i></div>
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/travel_note.js"></script>
+	</body>
+
+</html>

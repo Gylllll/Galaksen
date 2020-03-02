@@ -1,0 +1,426 @@
+body {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+/*返回顶部*/
+.top{
+	position: fixed;
+	top:80%;
+	right: 20px;
+}
+#top-btn{
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+#top-btn:hover{
+ background: rgba(238,169,184,.5);
+}
+/*question-container*/
+
+
+/*左边*/
+
+
+/*导航*/
+
+.question-container {
+	background: rgba(245, 255, 250, 0.7);
+}
+
+.question-container .question-left .search .navbar-form {
+	padding-left: 0;
+	margin: 20px 0;
+}
+
+
+/*搜索框*/
+
+.question-container .question-left .form-group {
+	width: 75%;
+}
+
+.question-container .question-left #search-input {
+	width: 100%;
+	height: 40px;
+}
+
+.question-container .question-left .form-control:focus {
+	border-color: #CD9B9B;
+	box-shadow: 3 1px 1px rgba(139, 101, 8, 0.5);
+}
+
+.question-container .question-left #search-btn {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	padding: 0 12px;
+}
+
+.question-container .question-left #search-btn:hover {
+	background: rgba(255, 193, 193, 0.5);
+	outline: none;
+}
+/*导航*/
+
+.question-container .question-left .question-nav li {
+	float: left;
+	height: 40px;
+	padding: 0 15px;
+}
+
+.question-container .question-left .question-nav li:hover {
+	border-bottom: 3px solid #6C7B8B;
+}
+
+.question-container .question-left .question-nav li:hover>a {
+	color: #6C7B8B;
+}
+
+.current {
+	background: #B5B5B5;
+}
+
+.question-container .question-left .question-nav li>a {
+	line-height: 40px;
+	display: inline-block;
+	color: #000;
+}
+
+.question-container .question-left .question-nav li.current>a {
+	color: #6C7B8B;
+}
+
+
+/*问题*/
+
+.question-container .question-left .question-content .question-search {
+	color: #6C7B8B;
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+.question-container .question-left .question-content .question-list .questions {
+	width: 80%;
+	background: rgba(238, 224, 229, .6);
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.questions .question-title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.questions .question-title a {
+	color: #000;
+}
+
+.questions .question-title a:hover {
+	color: #8B636C;
+}
+
+.questions .tags {
+	margin: 20px 0;
+}
+
+.questions .asker {
+	margin: 10px 0;
+}
+
+.questions .asker i {
+	font-size: 16px;
+}
+
+.questions .asker .site {
+	margin-right: 5px;
+}
+
+.questions .asker .asker-img {
+	width: 20px;
+	height: 20px;
+}
+
+.questions .asker .asker-name,
+.questions .good-answer .answer .answer-name {
+	color: #8B658B;
+	font-size: 14px;
+}
+
+hr {
+	border-top: 1px solid #363636;
+}
+
+.questions .more-answer {
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+
+.questions .more-answer i {
+	font-size: 20px;
+}
+
+.questions .more-answer a {
+	display: inline-block;
+	line-height: 30px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+.questions .good-answer .answer{
+	margin-bottom: 10px;
+}
+.questions .good-answer .answer .answer-img {
+	width: 30px;
+	height: 30px;
+}
+
+.questions .good-answer .answer .split {
+	margin: 0 10px;
+}
+
+.questions .good-answer .answer-content>a{
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	color: #696969;
+	margin: 10px 0;
+}
+
+/*我的回答 我的提问 也有用到这部分*/
+.asker div,
+.answer div {
+	display: inline-block;
+	font-size: 14px;
+	float: right;
+	vertical-align: middle;
+}
+
+
+/*分页器*/
+
+.foot-pagination .pagination>.current-pag>a {
+	background-color: #EEA9B8;
+}
+
+.foot-pagination .pagination {
+	float: left;
+}
+
+.foot-pagination .data-number {
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	margin: 20px 0;
+	vertical-align: bottom;
+}
+
+
+/*我的提问*/
+
+.question-container .question-left .my-question .my-question-list {
+	margin: 20px 0;
+}
+
+.question-container .question-left .my-question .my-question-list .my-questions {
+	width: 80%;
+	background: rgba(238, 224, 229, .6);
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.my-questions .question-title a {
+	color: #000;
+}
+
+.my-questions .question-title a:hover {
+	color: #8B636C;
+}
+
+.my-questions .tags {
+	margin: 20px 0;
+}
+
+.my-questions .asker {
+	margin: 10px 0;
+}
+
+.my-questions .asker i {
+	font-size: 16px;
+}
+
+.my-questions .asker .site {
+	margin-right: 5px;
+}
+
+.my-questions .asker .asker-img {
+	width: 20px;
+	height: 20px;
+}
+
+.my-questions .asker .asker-name{
+	color: #8B658B;
+	font-size: 14px;
+}
+
+.my-questions .other div {
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.question-container .question-left .my-question-null{
+	padding-top: 100px;
+	width:80%;
+	font-size: 18px;
+	color: #BEBEBE;
+}
+
+/*我的回答*/
+.question-container .question-left .my-answer .my-answer-list {
+	margin: 20px 0;
+}
+
+.question-container .question-left .my-answer .my-answer-list .my-answers {
+	width: 80%;
+	background: rgba(238, 224, 229, .6);
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.my-answers .question-title a {
+	color: #000;
+}
+
+.my-answers .question-title a:hover {
+	color: #8B636C;
+}
+
+.my-answers .tags {
+	margin: 20px 0;
+}
+
+.my-answers .asker {
+	margin: 10px 0;
+}
+
+.my-answers .asker i {
+	font-size: 16px;
+}
+
+.my-answers .asker .site {
+	margin-right: 5px;
+}
+
+.my-answers .asker .asker-img {
+	width: 20px;
+	height: 20px;
+}
+
+.my-answers .asker .asker-name,
+.my-answers .answer-detail .answer .answer-name {
+	color: #8B658B;
+	font-size: 14px;
+}
+
+.my-answers  .more-answer a {
+	font-size: 14px;
+}
+
+hr {
+	border-top: 1px solid #363636;
+}
+.my-answers label{
+	margin-bottom:10px;
+}
+.my-answers  .answer-detail .answer{
+	margin-bottom: 10px;
+}
+.my-answers  .answer-detail .answer .answer-img {
+	width: 30px;
+	height: 30px;
+}
+
+.my-answers  .answer-detail .answer .split {
+	margin: 0 10px;
+}
+
+.my-answers .answer-detail .answer-content>a{
+	color: #696969;
+	margin: 10px 0;
+}
+
+.question-container .question-left .my-answer-null{
+	padding-top: 100px;
+	width:80%;
+	font-size: 18px;
+	color: #BEBEBE;
+}
+
+/*右边*/
+
+.question-container .question-right #add-question {
+	width: 100%;
+	margin: 20px 0;
+	color: #fff;
+	font-size: 16px;
+	background: #8B636C;
+	outline: none;
+}
+
+.question-container .question-right #add-question i {
+	font-size: 18px;
+	color: #fff;
+}
+
+.question-container .question-right p {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.question-container .question-right .change {
+	color: #4F4F4F;
+}
+
+.question-container .question-right .change i {
+	font-size: 16px;
+	color: #4F4F4F;
+}
+
+.question-container .question-right .maybe li {
+	margin: 20px 0;
+	color: #4682B4;
+}
+
+.question-container .question-right .change:hover,
+.question-container .question-right .maybe li a:hover,
+.question-container .question-right .maybe li a:active {
+	color: #8B636C;
+	text-decoration: underline;
+}
+
+.question-container .question-right .maybe div {
+	display: inline-block;
+	color: #696969;
+	font-size: 14px;
+}
+

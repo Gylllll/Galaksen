@@ -1,0 +1,239 @@
+body {
+	font-size: 16px;
+	background: rgba(188, 210, 238, 0.4);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/*返回顶部*/
+
+.top {
+	position: fixed;
+	top: 80%;
+	right: 20px;
+}
+
+#top-btn {
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+}
+
+#top-btn:hover {
+	background: rgba(238, 169, 184, .5);
+}
+
+
+/*搜索框*/
+
+.scenery-container .search .form-group {
+	margin-top: 20px;
+}
+
+.scenery-container .search #search-input1,
+.scenery-container .search #search-input2 {
+	width: 100%;
+	height: 40px;
+}
+
+.scenery-container .search .form-control:focus {
+	border-color: #CD9B9B;
+	box-shadow: 3 1px 1px rgba(139, 101, 8, 0.5);
+}
+
+.scenery-container .search #search-btn1,
+.scenery-container .search #search-btn2 {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	padding: 0 12px;
+}
+
+.scenery-container .search #search-btn1:hover,
+.scenery-container .search #search-btn2:hover {
+	background: rgba(255, 193, 193, 0.5);
+	outline: none;
+}
+
+
+/*省市*/
+
+.scenery-container .search .province-city {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 15px;
+	height: 200px;
+	overflow: auto;
+	display: none;
+}
+
+.scenery-container .search .province-city .city {
+	display: none;
+}
+
+.scenery-container .search .province-city dl {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.scenery-container .search .province-city dt {
+	margin-bottom: 10px;
+}
+
+.province-city .city dt span:first-child {
+	color: #8B636C;
+	margin-right: 5px;
+}
+
+.province-city .city dt .current-province {
+	margin-left: 5px;
+}
+
+.scenery-container .search .province-city dd {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin-bottom: 10px;
+	color: #828282;
+}
+
+.scenery-container .search .province-city dd:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+hr {
+	border-top: 1px solid #363636;
+}
+
+.scenery-container .scenery-nav {
+	padding-bottom: 20px;
+}
+
+.scenery-container .scenery-nav>a {
+	color: #8B636C;
+	margin-right: 5px;
+	font-weight: 600;
+}
+
+.scenery-container .scenery-nav>a:hover{
+	text-decoration: underline;
+}
+
+
+/*景点*/
+
+.scenery-list .scenery-detail>a:nth-child(1) {
+	display: block;
+}
+
+.scenery-list .scenery-detail .scenery-name {
+	padding: 10px 0;
+	color: #363636;
+}
+
+.scenery-list .scenery-detail .scenery-name:hover {
+	color: #8B636C;
+}
+
+.scenery-list .scenery-detail i {
+	font-size: 16px;
+}
+
+.thumbnail {
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: rgba(255, 250, 250, .7);
+	border: 1px solid #CDC9C9;
+	border-radius: 7px;
+}
+
+
+/*点评*/
+
+.scenery-detail .comment>div {
+	float: left;
+	height: 45px;
+	line-height: 45px;
+	font-size: 15px;
+}
+
+.scenery-detail .comment .avg-score {
+	margin-left: 5px;
+}
+
+.scenery-detail .comment .star {
+	position: relative;
+}
+
+.scenery-detail .comment .star .bottom-star li,
+.scenery-detail .comment .star .top-star .top-inner li {
+	float: left;
+}
+
+.scenery-detail .comment .star .bottom-star li>i {
+	color: #999;
+}
+
+.scenery-detail .comment .star .top-star {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 50%;
+}
+
+.scenery-detail .comment .star .top-star .top-inner {
+	width: 1000%;
+}
+
+.scenery-detail .comment .comment-number {
+	color: #696969;
+	font-size: 14px;
+}
+
+
+/*简介*/
+
+.scenery-detail .caption a {
+	display: block;
+}
+
+.scenery-detail .scenery-caption {
+	font-size: 15px;
+	color: #4F4F4F;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+
+/*更多*/
+
+.scenery-container .more {
+	border-radius: 5px;
+	padding: 10px 0;
+	color: #8B8682;
+	background: #E8E8E8;
+}
+
+.scenery-container .more i {
+	font-size: 16px;
+}

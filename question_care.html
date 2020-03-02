@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Galaksen-关注该问题的用户</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1520252_yh4mjrx1ocs.css" />
+		<link rel="stylesheet" href="css/nav_head.css" />
+		<style>
+			body {
+				font-size: 16px;
+				background: url(img/background4.jpg) no-repeat center center;
+				background-attachment: fixed;
+				background-size: cover;
+				position: relative;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			a:link,
+			a:visited,
+			a:hover,
+			a:active {
+				text-decoration: none;
+			}
+			
+			.my-nav {
+				background: rgba(205, 205, 193, .7);
+			}
+			
+			.nav-container .login-after .user .user-menu,
+			.nav-container .login-after .message .message-menu {
+				background: rgba(205, 205, 193, .7);
+			}
+			
+			.nav-container .login-after .user .user-menu li:hover,
+			.nav-container .login-after .message .message-menu li:hover {
+				background: #B5B5B5;
+			}
+			
+			.nav-container .login-after .user:hover>a:first-child,
+			.nav-container .login-after .message:hover>a:first-child {
+				border-left: 1px solid #8B8B83;
+				border-right: 1px solid #8B8B83;
+			}
+			
+			.nav-container .login-after .user:hover .user-menu,
+			.nav-container .login-after .message:hover .message-menu {
+				border-color: #8B8B83;
+			}
+			/*返回顶部*/
+			
+			.top {
+				position: fixed;
+				top: 80%;
+				right: 20px;
+			}
+			
+			#top-btn {
+				width: 50px;
+				height: 50px;
+				outline: none;
+				border: none;
+			}
+			
+			#top-btn:hover {
+				background: rgba(238, 169, 184, .5);
+			}
+			
+			.care_list {
+				margin: 20px 0;
+			}
+			
+			.care_list .container {
+				padding: 20px 0;
+				background: rgba(255, 255, 255, .8);
+				border-radius: 7px;
+			}
+			
+			.path-nav {
+				background: transparent;
+			}
+			
+			.care-container {
+				padding: 0 20px;
+			}
+			
+			.care-container>div {
+				margin-bottom: 20px;
+			}
+			
+			.care-img {
+				width: 50px;
+				height: 50px;
+			}
+			
+			.care a {
+				display: inline-block;
+			}
+			
+			.care li {
+				display: inline-block;
+				float: left;
+				margin-right: 30px;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top hidden" title="返回顶部">
+			<button id="top-btn"><i class="iconfont icon-fanhuidingbu"></i></button>
+		</div>
+		<div id="header"></div>
+		<div class="care_list">
+			<div class="container">
+				<ol class="breadcrumb path-nav">
+					<li>
+						<a href="person_space.html">个人中心</a>
+					</li>
+					<li class="active">我的提问：<strong><span class="question-title">八月旅行国内去哪儿好？</span></strong></li>
+					<li class="active">关注人数详情</span>
+					</li>
+				</ol>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="care-container">
+							<div>关注该提问的人：<span class="care-num">4</span>人</div>
+							<ul class="care clearfix">
+								<li>
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><img class="img-circle care-img" src="img/1.jpg" /></a>
+									<a href="javascript:;"><span class="care-name">用户名1</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			$('#header').load('nav_head.html', function() {
+				$('.nav-left li').removeClass('my-active');
+			});
+
+			//返回顶部
+			$(window).scroll(function() {
+				var top = $(this).scrollTop();
+				if(top >= 800) {
+					$(".top").removeClass('hidden');
+				} else {
+					$(".top").addClass('hidden');
+				}
+			});
+
+			//点击：返回顶部
+			$("#top-btn").click(function() {
+				$('html').animate({
+					scrollTop: '0px'
+				}, 800);
+				//$(window).scrollTop(0);
+			});
+		</script>
+	</body>
+
+</html>
